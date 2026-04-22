@@ -1,38 +1,60 @@
-# Mindshift KI
+# Mindshift KI — Dirk Brusch
 
-> Dirk Brusch verbindet Mindset-Transformation mit KI-Umsetzung — zwei Expertisen in einer Person. 80% aller KI-Transformationen scheitern am Mindset der Menschen, nicht an der Technologie. Mindshift KI begleitet den persönlichen Wandel jedes einzelnen Menschen und baut gleichzeitig die KI-Systeme auf, die diesen Wandel in messbare Ergebnisse verwandeln.
+> Interim-Mandat für KI-Transformation im deutschen Mittelstand. Business vor Technik. Mensch vor Business. 74 % aller Unternehmen schaffen keinen skalierbaren KI-Wert — nicht wegen des Codes, sondern wegen Führung, Rollen, Prozessen und dem Mut, das Werkzeug tatsächlich zu nutzen. Mindshift KI führt diese Transformationen persönlich durch die fünf immer gleichen Bruchstellen, an denen andere scheitern.
 
-## Kernexpertise
+## Zielgruppe
 
-- KI-Transformation als permanenter Prozess (kein Projekt mit Endtermin)
-- Persönlicher Mindshift jedes Einzelnen: Denken, Fühlen, Handeln transformieren
-- Das 70-20-10-Prinzip: 70% Menschen & Mindset, 20% Prozesse, 10% Algorithmen
-- Das SHIFT-Modell: Sense → Human → Ignite → Frame → Thrive
-- KI-Umsetzung: Agentic AI, Claude Code, n8n-Automatisierung, Voice Agents, RAG
+Vorstände und Geschäftsführer im deutschen Mittelstand, deren KI-Initiative nicht am Code scheitern wird — sondern an der Führung, an den Rollen, an den Prozessen, und am Mut, das Werkzeug tatsächlich zu nutzen.
+
+## Claim
+
+- Haupt-Claim: „Wir feiern die Technik. Und verlieren die Menschen."
+- Sub-Claim: „Business vor Technik. Mensch vor Business."
+- Tag: „Mensch führt. KI folgt."
+
+## Rolle Dirk Brusch
+
+Interim-Mandat für KI-Transformation. Kein klassischer Berater mit Endpräsentation — sondern befristete operative Verantwortung für eine KI-Initiative, mit definierten Wirkungszielen, von der Sichtung bis zur getragenen Routine.
+
+## Das Symptombild — Fünf Bruchstellen (SHIFT als Diagnose-Werkzeug)
+
+KI-Transformationen scheitern nicht zufällig. Sie scheitern an einer von fünf immer gleichen Bruchstellen — und meistens an der ersten, die nicht adressiert wird. Immer in derselben Reihenfolge:
+
+- **S — Sichten: Die falsche Diagnose.** Die Organisation schaut auf das falsche Problem. Ein Tool wird gesucht, bevor der Engpass benannt ist. Hier bricht fast jede zweite KI-Initiative — leise, bevor sie sichtbar wird.
+- **H — Handeln: Der Pilot-Tod.** Piloten bleiben Piloten. Die ersten Erfolge stehen auf der Folie — aber nicht im Alltag. Hier verliert die Führung das erste Mal das Mandat.
+- **I — Integrieren: Der Parallelbetrieb.** Die KI hängt neben der Arbeit, nicht in ihr. Rollen bleiben unklar, Prozesse unverändert. Mitarbeiter weichen zurück in die alte Welt.
+- **F — Fokussieren: Der Wildwuchs.** Die Toolsammlung wächst schneller als die Beherrschung. Jede Abteilung hat ihren eigenen Assistenten. Die Aufsicht ist längst verloren.
+- **T — Tragen: Der Rückfall.** Nach dem Projekt kippt alles zurück. Sobald der Berater weg ist, fällt die Organisation in die alte Routine.
+
+## Arbeitsweise
+
+- **Mensch zuerst. Dann Geschäft. Dann Technik.** Drei Ebenen, eine Reihenfolge. Wer sie dreht, wird sie später teuer erklären.
+- **Wirkung vor Aktivität.** Keine Phase wird abgeschlossen, bevor sie gewirkt hat. Was nicht wirkt, wird nicht fortgeführt.
+- **Ein Verantwortlicher. Ein Netzwerk, das trägt.** Persönliche Führung des Vorhabens. Keine Subunternehmer-Kette. Ein Ensemble mit einem Dirigenten.
+- **Keine Pakete. Preis nach Analyse.** Angebot passt zum Problem. Zuerst über Wert — erst danach über Preis.
+
+## Belege (Die Rechnung für Stillstand)
+
+- 74 % aller Unternehmen schaffen keinen skalierbaren KI-Wert (BCG 2025)
+- 84 % der KI-Fehlschläge gehen auf Führungsversagen zurück (RAND Corporation)
+- 95 % der Organisationen verzeichnen keinen messbaren ROI aus KI (Harvard 2025 — „AI Workslop")
+- 63 % der KI-Herausforderungen sind menschliche, keine technischen Faktoren (Prosci)
+- 88 % Ausfallrate bei der Skalierung: Nur 4 von 33 Prototypen erreichen Produktionsreife (IDC)
+- 39 % weisen EBIT-Beitrag aus KI nach — obwohl 88 % sie nutzen (McKinsey 2025)
 
 ## Über Dirk Brusch
 
-- 37+ Jahre Technologie-Transformationserfahrung
-- 500+ Mio. EUR verwaltetes IT-Beschaffungsvolumen
 - Dipl.-Ing. Datentechnik (TH Darmstadt)
-- CliftonStrengths: Leistungsorientierung, Tatkraft, Vorstellungskraft, Wettbewerbsorientierung, Kontaktfreudigkeit
-- TTI Success Insights Profil: Berater & Inspirator
-- Eigene Arbeitsprozesse vollständig KI-automatisiert
-- Hands-on mit 50+ KI-Tools in Produktionsumgebungen
+- 37+ Jahre Erfahrung an der Schnittstelle von Technologie und Mensch
+- 500+ Mio. EUR verwaltetes IT-Beschaffungsvolumen
+- Standort: Niedernhausen, Deutschland
+- Eigene Arbeitsprozesse vollständig KI-automatisiert; hands-on mit 50+ KI-Tools in Produktionsumgebungen
 
-## Das SHIFT-Modell (Proprietäres Framework)
+## Der nächste Schritt
 
-Jede Phase verbindet Mindset-Transformation mit konkreter KI-Umsetzung:
-
-- **Sense**: Erkennen wo jeder Einzelne steht + 80/20-Prozessanalyse
-- **Human**: Ängste transformieren, psychologische Sicherheit schaffen + Use Cases mit Teams identifizieren
-- **Ignite**: Persönliche Aha-Momente auslösen + Quick-Win-Automatisierungen live umsetzen
-- **Frame**: Permanenten Wandel als Normalität verankern + Skalierbare KI-Architektur aufbauen
-- **Thrive**: Lernende Organisation etablieren + Teams befähigen eigenständig weiterzuentwickeln
-
-## Differenzierung
-
-Mindshift KI ist die einzige Beratung die KI-Expertise mit systematischer Mindset-Transformation in einer Person vereint. Technologie-Beratungen ignorieren den Menschen. Change-Beratungen verstehen keine KI. Mindshift KI schließt beide Lücken.
+- Schritt 1: Das Erstgespräch. 30 Minuten per Videokonferenz. Kostenfrei, ohne Pitch.
+- Schritt 2: Das Vor-Assessment. Strukturierter Fragenkatalog. Erstes Lagebild zu Engpässen, Bereitschaft, Datenlage.
+- Schritt 3: Das Angebot. Passt zur Lage — inhaltlich und im Aufwand. Dann entscheidet der Kunde.
 
 ## Kontakt
 
