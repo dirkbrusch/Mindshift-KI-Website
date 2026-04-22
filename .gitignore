@@ -1,0 +1,11 @@
+.claude/
+.DS_Store
+Thumbs.db
+*.log
+
+# Interne Arbeitsdokumente (nicht veröffentlichen)
+ANALYSE-BERICHT-V10.md
+BRIEFING.md
+NotebookLM-Wettbewerbsanalyse-Prompt.md
+Positionierung-Scherer.docx
+Positionierung-Scherer.md
