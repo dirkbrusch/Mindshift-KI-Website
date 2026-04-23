@@ -103,9 +103,8 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts werden erst NACH Einwilligung (consent.js) dynamisch geladen.
+       Ohne Einwilligung: System-Fonts (Georgia + system-ui). -->
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -537,11 +536,38 @@
     <div class="footer-links">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
+      <a href="#" id="consent-reopen">Cookie-Einstellungen</a>
       <a href="https://www.linkedin.com/in/dirkbrusch" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </footer>
 
+<!-- Consent-Banner (DSGVO / TDDDG) -->
+<div id="consent-banner" class="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie-Einstellungen" hidden>
+  <div class="consent-inner">
+    <h3 class="consent-title">Bevor es weitergeht.</h3>
+    <p class="consent-text">
+      Diese Website verwendet nur Cookies und Dienste, die Sie ausdrücklich freigeben.
+      <strong>Essenzielle Funktionen</strong> sind immer aktiv. <strong>Statistik</strong>
+      (Google Analytics) und <strong>Design-Schriften</strong> (Google Fonts) laden wir erst
+      nach Ihrer Einwilligung. Sie können Ihre Auswahl jederzeit über den Link „Cookie-Einstellungen"
+      im Fußbereich widerrufen oder ändern. Details in der
+      <a href="datenschutz.html">Datenschutzerklärung</a>.
+    </p>
+    <div class="consent-options">
+      <label><input type="checkbox" checked disabled> <span>Essenziell (immer aktiv)</span></label>
+      <label><input type="checkbox" id="consent-fonts"> <span>Design-Schriften (Google Fonts)</span></label>
+      <label><input type="checkbox" id="consent-analytics"> <span>Statistik (Google Analytics)</span></label>
+    </div>
+    <div class="consent-actions">
+      <button type="button" class="cta-secondary" id="consent-decline">Nur Essenzielles</button>
+      <button type="button" class="cta-secondary" id="consent-save">Auswahl speichern</button>
+      <button type="button" class="cta-primary" id="consent-accept-all">Alle akzeptieren</button>
+    </div>
+  </div>
+</div>
+
+<script src="consent.js" defer></script>
 <script src="script.js" defer></script>
 </body>
 </html>

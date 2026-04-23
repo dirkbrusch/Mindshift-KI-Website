@@ -37,6 +37,8 @@
 
   // ---------- Smooth-Scroll mit Offset für fixierte Nav ----------
   document.querySelectorAll('a[href^="#"]').forEach(link => {
+    // Consent-Reopen-Link nicht abfangen (wird von consent.js verwaltet)
+    if (link.id === 'consent-reopen') return;
     link.addEventListener('click', (e) => {
       const targetId = link.getAttribute('href');
       if (targetId.length <= 1) return;
