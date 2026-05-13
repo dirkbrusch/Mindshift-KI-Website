@@ -9,3 +9,10 @@ BRIEFING.md
 NotebookLM-Wettbewerbsanalyse-Prompt.md
 Positionierung-Scherer.docx
 Positionierung-Scherer.md
+
+# Subdomain-spezifische Datei: api/contact.php
+# Die Datei liegt im Repo als Referenz, wird aber auf api.mindshift-ki.de
+# separat deployed. Lokale Anpassungen (z.B. CORS-Origins für Tests) sollen
+# nicht als "modified" auftauchen. Aktiver Mechanismus: git update-index
+# --skip-worktree api/contact.php (lokal pro Klon zu setzen).
+api/contact.php
