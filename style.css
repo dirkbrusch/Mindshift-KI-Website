@@ -1013,12 +1013,22 @@ h1, h2, h3, h4, h5 {
   font-style: italic;
   color: var(--gold);
 }
-.footer-links a {
+.footer-links a,
+.footer-links .footer-linkbtn {
   color: var(--gold-light);
   margin-left: 1.25rem;
   transition: color 0.2s;
 }
-.footer-links a:hover { color: var(--gold); }
+.footer-links a:hover,
+.footer-links .footer-linkbtn:hover { color: var(--gold); }
+
+.footer-links .footer-linkbtn {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
 
 /* ================================================================
    REVEAL-ANIMATIONEN (dezent)
