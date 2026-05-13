@@ -12,7 +12,7 @@
   // ---- KONFIGURATION ----
   // Google Analytics 4 Measurement-ID hier eintragen (Platzhalter).
   // Wird erst NACH Einwilligung geladen.
-  var GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+  var GA_MEASUREMENT_ID = 'G-YPDXBRBTGS';
 
   var STORAGE_KEY = 'mindshift_consent';
   var STORAGE_VERSION = 1;
