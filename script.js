@@ -56,6 +56,9 @@
   const msg = document.getElementById('form-message');
 
   if (form && msg) {
+    // Zeit-Falle: Zeitpunkt des Formular-Aufrufs merken
+    const formLoadTime = Date.now();
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
@@ -64,6 +67,10 @@
         form.reportValidity();
         return;
       }
+
+      // Vergangene Zeit seit Seitenaufruf (ms) für die Zeit-Falle setzen
+      const elapsedField = document.getElementById('elapsed_ms');
+      if (elapsedField) elapsedField.value = Date.now() - formLoadTime;
 
       const btn = form.querySelector('button[type="submit"]');
       const originalLabel = btn ? btn.textContent : '';

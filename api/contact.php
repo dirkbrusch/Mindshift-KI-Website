@@ -1,8 +1,12 @@
 <?php
 /**
- * Mindshift KI — Kontaktformular-Handler
+ * Mindshift KI — Kontaktformular-Handler (V5)
  * Empfängt POST-Daten vom Formular und sendet sie per SMTP als E-Mail.
  * Keine Datenspeicherung — DSGVO-konform.
+ *
+ * Spam-Schutz (ohne externe Dienste): Honeypot, Zeit-Falle (elapsed_ms),
+ * Link-Filter und Keyword-Blockliste. Erkannte Bots werden still „akzeptiert",
+ * ohne dass eine Mail versendet wird.
  *
  * Deployment: Auf IONOS-Webhosting unter Subdomain api.mindshift-ki.de → /api/contact.php
  * NICHT auf GitHub Pages (kein PHP-Support dort)
@@ -51,6 +55,18 @@ if (!empty($_POST['_gotcha'])) {
     exit;
 }
 
+// === ZEIT-FALLE ===
+// Das Formular setzt per JavaScript die seit Seitenaufruf vergangene Zeit (ms).
+// Bots senden in Sekundenbruchteilen ab oder füllen das Feld gar nicht.
+// Wer schneller als 3 Sekunden ist (oder das Feld leer lässt) → Bot.
+$elapsed = intval($_POST['elapsed_ms'] ?? 0);
+if ($elapsed < 3000) {
+    // Still akzeptieren, aber nicht senden — der Bot soll keinen Hinweis bekommen
+    http_response_code(200);
+    echo json_encode(['success' => true]);
+    exit;
+}
+
 // === FORMULARDATEN LESEN ===
 $vorname     = trim($_POST['vorname'] ?? '');
 $nachname    = trim($_POST['nachname'] ?? '');
@@ -63,6 +79,35 @@ $standort    = trim($_POST['standort'] ?? '');
 $nachricht   = trim($_POST['nachricht'] ?? '');
 // Legacy-Feld, falls alte Formulare noch aktiv sind
 $interesse   = trim($_POST['interesse'] ?? '');
+
+// === ERWEITERTER SPAM-SCHUTZ: LINK-FILTER + KEYWORD-BLOCKLISTE ===
+// Geprüft werden die Freitext-Felder. Echte Erstanfragen enthalten praktisch
+// nie URLs oder die unten gelisteten Begriffe.
+$pruef_text = mb_strtolower($vorname . ' ' . $nachname . ' ' . $unternehmen . ' ' . $telefon . ' ' . $nachricht);
+
+// Link-Filter: http(s)://, www. oder „domain.tld"-Muster mit typischen Spam-TLDs
+if (preg_match('~https?://|www\.|\[url|\b[a-z0-9-]+\.(?:com|net|org|ru|cn|xyz|top|one|info|biz|online|site|shop|store|club|live|vip|win|bet|loan|link|click|icu|cc|tk)\b~iu', $pruef_text)) {
+    http_response_code(200);
+    echo json_encode(['success' => true]);
+    exit;
+}
+
+// Keyword-Blockliste: typische Spam-Begriffe (Wortgrenzen, um Fehltreffer zu vermeiden)
+$spam_begriffe = [
+    'jackpot', 'casino', 'lottery', 'lotto', 'betting', 'bet365', 'gambling',
+    'viagra', 'cialis', 'porn', 'sex', 'escort', 'xxx', 'nude', 'webcam',
+    'bitcoin', 'crypto', 'forex', 'binary option', 'investment opportunity',
+    'payday', 'mortgage',
+    'seo service', 'seo services', 'backlink', 'guest post', 'rank your',
+    'tap away', 'click here', 'limited offer', 'act now',
+    'make money', 'work from home', 'weight loss',
+];
+$spam_regex = '~\b(' . implode('|', array_map('preg_quote', $spam_begriffe)) . ')\b~iu';
+if (preg_match($spam_regex, $pruef_text)) {
+    http_response_code(200);
+    echo json_encode(['success' => true]);
+    exit;
+}
 
 // === MAPPING: Select-Werte auf lesbare Labels ===
 $rolle_labels = [
