@@ -59,30 +59,7 @@
     return obj;
   }
 
-  // ---- Google Fonts dynamisch laden ----
-  var fontsLoaded = false;
-  function loadGoogleFonts() {
-    if (fontsLoaded) return;
-    fontsLoaded = true;
-
-    var pre1 = document.createElement('link');
-    pre1.rel = 'preconnect';
-    pre1.href = 'https://fonts.googleapis.com';
-    document.head.appendChild(pre1);
-
-    var pre2 = document.createElement('link');
-    pre2.rel = 'preconnect';
-    pre2.href = 'https://fonts.gstatic.com';
-    pre2.crossOrigin = 'anonymous';
-    document.head.appendChild(pre2);
-
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap';
-    document.head.appendChild(link);
-
-    document.documentElement.classList.add('consent-fonts');
-  }
+  // ---- Schriftarten werden lokal gehostet (kein Google Fonts, kein Consent nötig) ----
 
   // ---- Google Analytics 4 dynamisch laden ----
   var gaLoaded = false;
@@ -114,7 +91,6 @@
       analytics_storage: state.analytics ? 'granted' : 'denied'
     });
 
-    if (state.fonts) loadGoogleFonts();
     if (state.analytics) loadGoogleAnalytics();
   }
 
@@ -135,7 +111,7 @@
     }
     banner.hidden = false;
     // nach kleinem Tick Klasse setzen für Transition
-    requestAnimationFrame(function () { banner.classList.add('open'); });
+    setTimeout(function () { banner.classList.add('open'); }, 20);
   }
   function hideBanner() {
     if (!banner) return;

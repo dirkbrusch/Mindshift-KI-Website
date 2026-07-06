@@ -1,107 +1,150 @@
-/* ================================================================
-   MINDSHIFT KI — PREMIUM LANDING PAGE V2
-   Kompakt: Nav-Scroll, Reveal, Smooth-Scroll, Formular
-   ================================================================ */
-
+/* Dirk Brusch — Keynote Speaker · Interaktion */
 (function () {
   'use strict';
 
-  // ---------- NAV: transparent -> solid beim Scrollen ----------
-  const nav = document.getElementById('nav');
-  if (nav) {
-    const onScroll = () => {
-      if (window.scrollY > 40) nav.classList.add('scrolled');
-      else nav.classList.remove('scrolled');
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+  /* ---- Nav: Hintergrund bei Scroll ---- */
+  var nav = document.getElementById('nav');
+  function onScroll() {
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
   }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
-  // ---------- REVEAL-Animationen ----------
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const reveals = document.querySelectorAll('.reveal');
+  /* ---- Mobile-Menü ---- */
+  var burger = document.getElementById('burger');
+  var links = document.querySelector('.nav__links');
+  function closeMenu() {
+    links.classList.remove('open');
+    burger.classList.remove('x');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Menü öffnen');
+  }
+  burger.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    burger.classList.toggle('x', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+  });
+  links.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', closeMenu);
+  });
 
-  if (prefersReduced || !('IntersectionObserver' in window)) {
-    reveals.forEach(el => el.classList.add('in'));
-  } else {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
-        }
+  /* ---- Reveal on scroll ---- */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-    reveals.forEach(el => io.observe(el));
+    }, { threshold: 0.12 });
+    reveals.forEach(function (r) { io.observe(r); });
+  } else {
+    reveals.forEach(function (r) { r.classList.add('in'); });
   }
 
-  // ---------- Smooth-Scroll mit Offset für fixierte Nav ----------
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    // Consent-Reopen-Link nicht abfangen (wird von consent.js verwaltet)
-    if (link.id === 'consent-reopen') return;
-    link.addEventListener('click', (e) => {
-      const targetId = link.getAttribute('href');
-      if (targetId.length <= 1) return;
-      const target = document.querySelector(targetId);
-      if (!target) return;
-      e.preventDefault();
-      const top = target.getBoundingClientRect().top + window.scrollY - 20;
-      window.scrollTo({ top, behavior: prefersReduced ? 'auto' : 'smooth' });
-      history.replaceState(null, '', targetId);
+  /* ---- Counter ---- */
+  function easeOutQuart(t) { return 1 - Math.pow(1 - t, 4); }
+  function animateCount(el) {
+    var target = parseFloat(el.getAttribute('data-count'));
+    var suffix = el.getAttribute('data-suffix') || '';
+    var dur = 1800, start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      el.innerHTML = Math.round(easeOutQuart(p) * target) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var counters = document.querySelectorAll('[data-count]');
+  if ('IntersectionObserver' in window) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { animateCount(e.target); cio.unobserve(e.target); }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (c) { cio.observe(c); });
+  } else {
+    counters.forEach(function (c) { c.innerHTML = c.getAttribute('data-count') + (c.getAttribute('data-suffix') || ''); });
+  }
+
+  /* ---- Keynote-Buttons: gewählte Keynote ins Formular übernehmen ---- */
+  var keynoteField = document.getElementById('keynoteField');
+  document.querySelectorAll('[data-keynote]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (keynoteField) keynoteField.value = btn.getAttribute('data-keynote');
+      var msg = document.getElementById('nachricht');
+      if (msg && !msg.value) {
+        msg.value = 'Interesse an: ' + btn.getAttribute('data-keynote') + '\n\n';
+      }
     });
   });
 
-  // ---------- Kontaktformular ----------
-  const form = document.getElementById('contact-form');
-  const msg = document.getElementById('form-message');
+  /* ---- Klebriger Mobile-CTA ---- */
+  var sticky = document.getElementById('stickyCta');
+  var anfrageSection = document.getElementById('anfrage');
+  var anfrageVisible = false;
+  if (sticky && anfrageSection && 'IntersectionObserver' in window) {
+    var sio = new IntersectionObserver(function (entries) {
+      anfrageVisible = entries[0].isIntersecting;
+      updateSticky();
+    }, { threshold: 0.15 });
+    sio.observe(anfrageSection);
+    function updateSticky() {
+      var past = window.scrollY > window.innerHeight * 0.7;
+      sticky.classList.toggle('show', past && !anfrageVisible);
+    }
+    window.addEventListener('scroll', updateSticky, { passive: true });
+    updateSticky();
+  }
 
-  if (form && msg) {
-    // Zeit-Falle: Zeitpunkt des Formular-Aufrufs merken
-    const formLoadTime = Date.now();
+  /* ---- Spam-Schutz: Ladezeitpunkt setzen (Zeit-Falle) ---- */
+  var tsField = document.getElementById('tsField');
+  if (tsField) tsField.value = String(Date.now());
 
-    form.addEventListener('submit', async (e) => {
+  /* ---- Formular-Versand ---- */
+  var form = document.getElementById('anfrageForm');
+  var status = document.getElementById('formStatus');
+  var submitBtn = document.getElementById('submitBtn');
+  var ENDPOINT = 'https://api.mindshift-ki.de/contact.php';
+
+  if (form) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
+      status.className = 'form__status';
+      status.textContent = '';
 
-      // Pflichtfelder prüfen
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
       }
+      submitBtn.disabled = true;
+      var original = submitBtn.textContent;
+      submitBtn.textContent = 'Wird gesendet …';
 
-      // Vergangene Zeit seit Seitenaufruf (ms) für die Zeit-Falle setzen
-      const elapsedField = document.getElementById('elapsed_ms');
-      if (elapsedField) elapsedField.value = Date.now() - formLoadTime;
-
-      const btn = form.querySelector('button[type="submit"]');
-      const originalLabel = btn ? btn.textContent : '';
-      if (btn) { btn.disabled = true; btn.textContent = 'Wird gesendet…'; }
-      msg.className = 'form-message';
-      msg.textContent = '';
-
-      try {
-        const data = new FormData(form);
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
+      var data = new FormData(form);
+      fetch(ENDPOINT, { method: 'POST', body: data })
+        .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (res.ok && res.j.success !== false) {
+            form.reset();
+            status.className = 'form__status ok';
+            status.textContent = 'Vielen Dank — Ihre Anfrage ist da. Ich melde mich persönlich bei Ihnen.';
+          } else {
+            throw new Error('fail');
+          }
+        })
+        .catch(function () {
+          status.className = 'form__status err';
+          status.innerHTML = 'Das hat leider nicht geklappt. Schreiben Sie mir direkt an <a href="mailto:dirk.brusch@mindshift-ki.de">dirk.brusch@mindshift-ki.de</a>.';
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = original;
         });
-
-        const json = await res.json().catch(() => ({}));
-
-        if (res.ok && json.success) {
-          msg.textContent = 'Danke. Ich melde mich innerhalb von 24 Stunden.';
-          msg.className = 'form-message';
-          form.reset();
-        } else {
-          msg.textContent = (json.error || 'Fehler beim Senden. Bitte per E-Mail: dirk.brusch@mindshift-ki.de');
-          msg.className = 'form-message error';
-        }
-      } catch (err) {
-        msg.textContent = 'Netzwerkfehler. Bitte per E-Mail: dirk.brusch@mindshift-ki.de';
-        msg.className = 'form-message error';
-      } finally {
-        if (btn) { btn.disabled = false; btn.textContent = originalLabel; }
-      }
     });
   }
+
+  /* ---- Jahr im Footer aktuell halten (falls gewünscht) ---- */
 })();

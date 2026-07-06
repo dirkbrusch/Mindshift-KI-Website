@@ -1,64 +1,41 @@
-# Mindshift KI — Dirk Brusch
+# Dirk Brusch — Keynote Speaker (KI & Mensch)
 
-> Interim-Mandat für KI-Transformation im deutschen Mittelstand. Business vor Technik. Mensch vor Business. 74 % aller Unternehmen schaffen keinen skalierbaren KI-Wert — nicht wegen des Codes, sondern wegen Führung, Rollen, Prozessen und dem Mut, das Werkzeug tatsächlich zu nutzen. Mindshift KI führt diese Transformationen persönlich durch die fünf immer gleichen Bruchstellen, an denen andere scheitern.
+> Dirk Brusch ist Keynote Speaker zum Thema Künstliche Intelligenz und Mensch. Seine Vorträge stellen nicht die Technik in den Mittelpunkt, sondern den Menschen: wie Belegschaften den KI-Wandel tragen, statt ihn zu fürchten. Leitsatz: „Wir feiern die Technik – und verlieren die Menschen." Die KI ist das Werkzeug, der Mensch bleibt das Herz der Wertschöpfung.
 
-## Zielgruppe
+## Person & Positionierung
+- **Name:** Dirk Brusch
+- **Rolle:** Keynote Speaker, Mindshift KI
+- **Thema:** KI & Mensch — menschzentrierter Wandel, Mindset, Selbstreflexion, Zukunft der Arbeit
+- **Selbstverständnis:** „Navigator im KI-Zeitalter" — verbindet Technik-Tiefe mit mentalem Wandel; spricht auf Augenhöhe, nimmt die Angst der Menschen ernst.
+- **Besonderheit:** seltene Symbiose aus Ingenieurslogik (Dipl.-Ing. für Datentechnik, TH Darmstadt; IBM-zertifiziert; 37 Jahre digitale Transformation seit 1988) und Verhaltenspsychologie.
+- **Sprache:** Deutsch
+- **Kontakt:** dirk.brusch@mindshift-ki.de · https://mindshift-ki.de/
 
-Vorstände und Geschäftsführer im deutschen Mittelstand, deren KI-Initiative nicht am Code scheitern wird — sondern an der Führung, an den Rollen, an den Prozessen, und am Mut, das Werkzeug tatsächlich zu nutzen.
+## Angebot
+- **Ausschließlich individuelle Keynotes** — nichts von der Stange. Jede Keynote wird auf Anlass, Branche und Publikum zugeschnitten.
+- **Formate:** Keynote oder Impulsvortrag, 20–60 Minuten.
+- **Für:** Mitarbeiter-Events, Führungskräftetagungen, Kick-offs, Jahresauftakte, Kongresse.
+- **Buchung:** über das Anfrageformular auf der Website; persönliche Rückmeldung, kein Verkaufsgespräch.
 
-## Claim
+## Auszeichnungen & Zertifizierungen
+- Top 111 Personal Brand 2026 (ExpertenPortal)
+- Excellent Experience – „sehr gut" (ExpertenPortal 2026)
+- Zertifizierter Top Speaker (Hermann Scherer)
+- Excellence Award (Hermann Scherer, persönlich überreicht)
 
-- Haupt-Claim: „Wir feiern die Technik. Und verlieren die Menschen."
-- Sub-Claim: „Business vor Technik. Mensch vor Business."
-- Tag: „Mensch führt. KI folgt."
+## Öffentliche Bühnen (2026)
+- Founder Summit — Inspiration Stage (April 2026)
+- Silent Speaker Battle (Juni 2026)
+- Internationaler Speaker Slam (Juli 2026)
+- Hinweis: Kundenauftritte werden aus Diskretion nicht namentlich genannt.
 
-## Rolle Dirk Brusch
+## Kernbotschaften
+- „Wir feiern die Technik – und verlieren die Menschen."
+- „Die KI ist das Werkzeug — der Mensch bleibt das Herz der Wertschöpfung."
+- „Mindset vor Toolset." · „Erst hinschauen. Dann handeln."
+- Aus „Ich kann das nicht" wird „Ich kann das noch nicht."
 
-Interim-Mandat für KI-Transformation. Kein klassischer Berater mit Endpräsentation — sondern befristete operative Verantwortung für eine KI-Initiative, mit definierten Wirkungszielen, von der Sichtung bis zur getragenen Routine.
-
-## Das Symptombild — Fünf Bruchstellen (SHIFT als Diagnose-Werkzeug)
-
-KI-Transformationen scheitern nicht zufällig. Sie scheitern an einer von fünf immer gleichen Bruchstellen — und meistens an der ersten, die nicht adressiert wird. Immer in derselben Reihenfolge:
-
-- **S — Sichten: Die falsche Diagnose.** Die Organisation schaut auf das falsche Problem. Ein Tool wird gesucht, bevor der Engpass benannt ist. Hier bricht fast jede zweite KI-Initiative — leise, bevor sie sichtbar wird.
-- **H — Handeln: Der Pilot-Tod.** Piloten bleiben Piloten. Die ersten Erfolge stehen auf der Folie — aber nicht im Alltag. Hier verliert die Führung das erste Mal das Mandat.
-- **I — Integrieren: Der Parallelbetrieb.** Die KI hängt neben der Arbeit, nicht in ihr. Rollen bleiben unklar, Prozesse unverändert. Mitarbeiter weichen zurück in die alte Welt.
-- **F — Fokussieren: Der Wildwuchs.** Die Toolsammlung wächst schneller als die Beherrschung. Jede Abteilung hat ihren eigenen Assistenten. Die Aufsicht ist längst verloren.
-- **T — Tragen: Der Rückfall.** Nach dem Projekt kippt alles zurück. Sobald der Berater weg ist, fällt die Organisation in die alte Routine.
-
-## Arbeitsweise
-
-- **Mensch zuerst. Dann Geschäft. Dann Technik.** Drei Ebenen, eine Reihenfolge. Wer sie dreht, wird sie später teuer erklären.
-- **Wirkung vor Aktivität.** Keine Phase wird abgeschlossen, bevor sie gewirkt hat. Was nicht wirkt, wird nicht fortgeführt.
-- **Ein Verantwortlicher. Ein Netzwerk, das trägt.** Persönliche Führung des Vorhabens. Keine Subunternehmer-Kette. Ein Ensemble mit einem Dirigenten.
-- **Keine Pakete. Preis nach Analyse.** Angebot passt zum Problem. Zuerst über Wert — erst danach über Preis.
-
-## Belege (Die Rechnung für Stillstand)
-
-- 74 % aller Unternehmen schaffen keinen skalierbaren KI-Wert (BCG 2025)
-- 84 % der KI-Fehlschläge gehen auf Führungsversagen zurück (RAND Corporation)
-- 95 % der Organisationen verzeichnen keinen messbaren ROI aus KI (Harvard 2025 — „AI Workslop")
-- 63 % der KI-Herausforderungen sind menschliche, keine technischen Faktoren (Prosci)
-- 88 % Ausfallrate bei der Skalierung: Nur 4 von 33 Prototypen erreichen Produktionsreife (IDC)
-- 39 % weisen EBIT-Beitrag aus KI nach — obwohl 88 % sie nutzen (McKinsey 2025)
-
-## Über Dirk Brusch
-
-- Dipl.-Ing. Datentechnik (TH Darmstadt)
-- 37+ Jahre Erfahrung an der Schnittstelle von Technologie und Mensch
-- 500+ Mio. EUR verwaltetes IT-Beschaffungsvolumen
-- Standort: Niedernhausen, Deutschland
-- Eigene Arbeitsprozesse vollständig KI-automatisiert; hands-on mit 50+ KI-Tools in Produktionsumgebungen
-
-## Der nächste Schritt
-
-- Schritt 1: Das Erstgespräch. 30 Minuten per Videokonferenz. Kostenfrei, ohne Pitch.
-- Schritt 2: Das Vor-Assessment. Strukturierter Fragenkatalog. Erstes Lagebild zu Engpässen, Bereitschaft, Datenlage.
-- Schritt 3: Das Angebot. Passt zur Lage — inhaltlich und im Aufwand. Dann entscheidet der Kunde.
-
-## Kontakt
-
-- Website: https://mindshift-ki.de
-- LinkedIn: https://www.linkedin.com/in/dirkbrusch
-- E-Mail: dirk.brusch@mindshift-ki.de
-- Standort: Niedernhausen, Deutschland
+## Seiten
+- Startseite: https://mindshift-ki.de/
+- Impressum: https://mindshift-ki.de/impressum.html
+- Datenschutz: https://mindshift-ki.de/datenschutz.html

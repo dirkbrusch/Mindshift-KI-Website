@@ -1,18 +1,23 @@
+# ─────────────────────────────────────────────────────────────
+#  Nicht ins (öffentliche) Repo / nicht über GitHub Pages ausliefern
+# ─────────────────────────────────────────────────────────────
+
+# PHP-Backend: gehört ausschließlich auf die Subdomain api.mindshift-ki.de,
+# nicht auf GitHub Pages (dort kein PHP) und nicht ins öffentliche Repo.
+api/
+
+# Roh-/Quellbilder: nur die optimierten Bilder in bilder/ werden ausgeliefert.
+Bilder und Auszeichnungen/
+
+# Interne Dokumentation (nicht öffentlich ausliefern)
+DEPLOYMENT.md
+
+# Lokale Tooling-/Editor-/Preview-Dateien
 .claude/
+.vscode/
+.idea/
+
+# Betriebssystem-Müll
 .DS_Store
 Thumbs.db
-*.log
-
-# Interne Arbeitsdokumente (nicht veröffentlichen)
-ANALYSE-BERICHT-V10.md
-BRIEFING.md
-NotebookLM-Wettbewerbsanalyse-Prompt.md
-Positionierung-Scherer.docx
-Positionierung-Scherer.md
-
-# Subdomain-spezifische Datei: api/contact.php
-# Die Datei liegt im Repo als Referenz, wird aber auf api.mindshift-ki.de
-# separat deployed. Lokale Anpassungen (z.B. CORS-Origins für Tests) sollen
-# nicht als "modified" auftauchen. Aktiver Mechanismus: git update-index
-# --skip-worktree api/contact.php (lokal pro Klon zu setzen).
-api/contact.php
+desktop.ini

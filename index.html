@@ -1,573 +1,547 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0A1628">
-
-  <title>Dirk Brusch — Mindshift KI | Wir feiern die Technik. Und verlieren die Menschen.</title>
-  <meta name="description" content="Interim-Mandat für KI-Transformation im deutschen Mittelstand. 74% aller KI-Initiativen scheitern — 84% davon an der Führung, nicht am Code. Business vor Technik. Mensch vor Business.">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-  <meta name="author" content="Dirk Brusch">
-  <link rel="canonical" href="https://mindshift-ki.de/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Wir feiern die Technik. Und verlieren die Menschen. — Mindshift KI">
-  <meta property="og:description" content="Interim-Mandat für KI-Transformation. Business vor Technik. Mensch vor Business. Für Vorstände und Geschäftsführer im deutschen Mittelstand.">
-  <meta property="og:locale" content="de_DE">
-  <meta property="og:url" content="https://mindshift-ki.de/">
-  <meta property="og:site_name" content="Mindshift KI">
-  <meta property="og:image" content="https://mindshift-ki.de/portrait-dirk.png">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Wir feiern die Technik. Und verlieren die Menschen. — Mindshift KI">
-  <meta name="twitter:description" content="Interim-Mandat für KI-Transformation. Business vor Technik. Mensch vor Business.">
-  <meta name="twitter:image" content="https://mindshift-ki.de/portrait-dirk.png">
-
-  <!-- Icons -->
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": "https://mindshift-ki.de/#person",
-        "name": "Dirk Brusch",
-        "givenName": "Dirk",
-        "familyName": "Brusch",
-        "jobTitle": "Interim-Mandat für KI-Transformation",
-        "url": "https://mindshift-ki.de",
-        "image": "https://mindshift-ki.de/portrait-dirk.png",
-        "email": "dirk.brusch@mindshift-ki.de",
-        "sameAs": ["https://www.linkedin.com/in/dirkbrusch"],
-        "alumniOf": { "@type": "CollegeOrUniversity", "name": "TH Darmstadt", "department": "Datentechnik (Dipl.-Ing.)" },
-        "knowsAbout": ["KI-Transformation", "Interim-Management", "Change-Management", "Mittelstand", "Agentic AI", "Mindset-Transformation", "SHIFT-Modell"],
-        "worksFor": { "@id": "https://mindshift-ki.de/#organization" },
-        "address": { "@type": "PostalAddress", "addressLocality": "Niedernhausen", "addressCountry": "DE" }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://mindshift-ki.de/#organization",
-        "name": "Mindshift KI",
-        "url": "https://mindshift-ki.de",
-        "logo": "https://mindshift-ki.de/mindshift-ki-logo.svg",
-        "founder": { "@id": "https://mindshift-ki.de/#person" },
-        "slogan": "Mensch führt. KI folgt."
-      },
-      {
-        "@type": "Service",
-        "name": "Interim-Mandat KI-Transformation",
-        "serviceType": "KI-Transformation und Interim-Management",
-        "description": "Persönliche Führung von KI-Transformationen im deutschen Mittelstand. Mensch vor Geschäft. Geschäft vor Technik. Ein Verantwortlicher, ein Netzwerk das trägt.",
-        "provider": { "@id": "https://mindshift-ki.de/#person" },
-        "areaServed": { "@type": "Country", "name": "Deutschland" },
-        "audience": { "@type": "BusinessAudience", "audienceType": "Vorstände und Geschäftsführer im deutschen Mittelstand" }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://mindshift-ki.de/#website",
-        "url": "https://mindshift-ki.de",
-        "name": "Mindshift KI — Dirk Brusch",
-        "publisher": { "@id": "https://mindshift-ki.de/#organization" },
-        "inLanguage": "de-DE"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://mindshift-ki.de/#webpage",
-        "url": "https://mindshift-ki.de",
-        "name": "Dirk Brusch — Mindshift KI",
-        "isPartOf": { "@id": "https://mindshift-ki.de/#website" },
-        "about": { "@id": "https://mindshift-ki.de/#person" },
-        "inLanguage": "de-DE"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "Was ist ein Interim-Mandat für KI-Transformation?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Ein befristeter, persönlich geführter Auftrag, eine KI-Initiative durch die fünf kritischen Bruchstellen zu tragen — von der Sichtung bis zur getragenen Routine. Kein Beratungsprojekt mit Endpräsentation, sondern operative Verantwortung mit definierten Wirkungszielen." } },
-          { "@type": "Question", "name": "Für wen ist Mindshift KI?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Für Vorstände und Geschäftsführer im deutschen Mittelstand, deren KI-Initiative nicht am Code scheitern wird — sondern an Führung, Rollen, Prozessen und dem Mut, das Werkzeug tatsächlich zu nutzen." } },
-          { "@type": "Question", "name": "Warum scheitern 74% der KI-Initiativen?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Weil die meisten Organisationen an der falschen Stelle beginnen: Sie suchen ein Tool, bevor der Engpass benannt ist. Sie feiern Piloten, die nie im Alltag ankommen. Sie lassen die KI neben der Arbeit hängen statt in ihr. Das Muster ist immer gleich — und die Reihenfolge auch." } },
-          { "@type": "Question", "name": "Was kostet ein Erstgespräch?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Nichts. 30 Minuten per Videokonferenz. Sie beschreiben Ihre Lage. Wir prüfen gemeinsam, ob eine Zusammenarbeit Sinn hat. Kein Pitch, kein Verkaufsgespräch." } }
-        ]
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dirk Brusch — Keynote Speaker: Wir feiern die Technik und verlieren die Menschen</title>
+<meta name="description" content="Dirk Brusch, Keynote Speaker zu KI und Mensch. Keynotes, die Menschen durch den KI-Wandel führen — nicht die Technik feiern, sondern den Menschen mitnehmen. Jetzt für Ihre Veranstaltung anfragen.">
+<meta name="author" content="Dirk Brusch">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="keywords" content="Keynote Speaker, KI und Mensch, Künstliche Intelligenz, KI-Wandel, Change, Mindset, Führung, Keynote buchen, Redner KI, Dirk Brusch">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dirk Brusch — Keynote Speaker">
+<meta property="og:title" content="Dirk Brusch — Keynote Speaker zu KI &amp; Mensch">
+<meta property="og:description" content="Wir feiern die Technik – und verlieren die Menschen. Eine individuelle Keynote, die Ihre Menschen durch den KI-Wandel trägt.">
+<meta property="og:url" content="https://mindshift-ki.de/">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://mindshift-ki.de/bilder/event-speakerslam.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dirk Brusch — Keynote Speaker zu KI &amp; Mensch">
+<meta name="twitter:description" content="Wir feiern die Technik – und verlieren die Menschen. Individuelle Keynotes, die den Menschen durch den KI-Wandel führen.">
+<meta name="twitter:image" content="https://mindshift-ki.de/bilder/event-speakerslam.jpg">
+<meta name="theme-color" content="#0A1628">
+<link rel="canonical" href="https://mindshift-ki.de/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts.css?v=1">
+<link rel="stylesheet" href="style.css?v=1">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mindshift-ki.de/#person",
+      "name": "Dirk Brusch",
+      "givenName": "Dirk",
+      "familyName": "Brusch",
+      "jobTitle": "Keynote Speaker",
+      "description": "Keynote Speaker zu Künstlicher Intelligenz und Mensch. Individuelle Vorträge, die Menschen durch den KI-Wandel führen — der Mensch im Mittelpunkt, nicht die Technik.",
+      "url": "https://mindshift-ki.de/",
+      "image": "https://mindshift-ki.de/bilder/portrait-dirk.jpg",
+      "email": "dirk.brusch@mindshift-ki.de",
+      "sameAs": ["https://www.linkedin.com/in/dirkbrusch"],
+      "knowsAbout": ["Künstliche Intelligenz", "KI und Mensch", "Change-Management", "Mindset", "Selbstreflexion", "Zukunft der Arbeit", "Digitale Transformation"],
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "TH Darmstadt" },
+      "award": ["Top 111 Personal Brand 2026 (ExpertenPortal)", "Excellent Experience – sehr gut (ExpertenPortal 2026)", "Excellence Award (Hermann Scherer)"],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Zertifizierung", "name": "Zertifizierter Top Speaker (Hermann Scherer)" }
+      ],
+      "worksFor": { "@id": "https://mindshift-ki.de/#organization" },
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Individuelle Keynote zu KI und Mensch",
+          "serviceType": "Keynote Speaking",
+          "provider": { "@id": "https://mindshift-ki.de/#person" }
+        }
       }
-    ]
-  }
-  </script>
-
-  <!-- Google Fonts werden erst NACH Einwilligung (consent.js) dynamisch geladen.
-       Ohne Einwilligung: System-Fonts (Georgia + system-ui). -->
-
-  <link rel="stylesheet" href="style.css">
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://mindshift-ki.de/#organization",
+      "name": "Mindshift KI",
+      "url": "https://mindshift-ki.de/",
+      "logo": "https://mindshift-ki.de/mac-logo.png",
+      "email": "dirk.brusch@mindshift-ki.de",
+      "founder": { "@id": "https://mindshift-ki.de/#person" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mindshift-ki.de/#website",
+      "url": "https://mindshift-ki.de/",
+      "name": "Dirk Brusch — Keynote Speaker",
+      "inLanguage": "de-DE",
+      "publisher": { "@id": "https://mindshift-ki.de/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mindshift-ki.de/#webpage",
+      "url": "https://mindshift-ki.de/",
+      "name": "Dirk Brusch — Keynote Speaker: Wir feiern die Technik und verlieren die Menschen",
+      "isPartOf": { "@id": "https://mindshift-ki.de/#website" },
+      "about": { "@id": "https://mindshift-ki.de/#person" },
+      "primaryImageOfPage": "https://mindshift-ki.de/bilder/event-speakerslam.jpg",
+      "inLanguage": "de-DE"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mindshift-ki.de/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Worüber spricht Dirk Brusch?", "acceptedAnswer": { "@type": "Answer", "text": "Über Künstliche Intelligenz und den Menschen: wie Belegschaften den KI-Wandel tragen, statt ihn zu fürchten. Seine Kernbotschaft lautet: Wir feiern die Technik – und verlieren die Menschen. Die KI ist das Werkzeug, der Mensch bleibt das Herz der Wertschöpfung." } },
+        { "@type": "Question", "name": "Für welche Anlässe und welches Publikum eignet sich die Keynote?", "acceptedAnswer": { "@type": "Answer", "text": "Für Mitarbeiter-Events, Führungskräftetagungen, Kick-offs, Jahresauftakte und Kongresse — überall, wo Menschen durch Veränderung und den KI-Wandel geführt werden sollen." } },
+        { "@type": "Question", "name": "Welche Formate und Vortragslängen gibt es?", "acceptedAnswer": { "@type": "Answer", "text": "Keynote oder Impulsvortrag, 20 bis 60 Minuten, auf Ihren Slot zugeschnitten. Vortragssprache ist Deutsch." } },
+        { "@type": "Question", "name": "Gibt es Standard-Keynotes von der Stange?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Jede Keynote wird individuell entwickelt — zugeschnitten auf Ihre Branche, Ihren Anlass und Ihr Publikum." } },
+        { "@type": "Question", "name": "Was macht Dirk Brusch als Speaker einzigartig?", "acceptedAnswer": { "@type": "Answer", "text": "Die seltene Symbiose aus Ingenieurslogik (Dipl.-Ing. für Datentechnik, IBM-zertifiziert, 37 Jahre digitale Transformation seit 1988) und Verhaltenspsychologie. Ausgezeichnet unter anderem mit dem Excellence Award von Hermann Scherer und als Top 111 Personal Brand 2026." } },
+        { "@type": "Question", "name": "Wie kann ich Dirk Brusch für eine Veranstaltung buchen?", "acceptedAnswer": { "@type": "Answer", "text": "Über das Anfrageformular auf dieser Seite. Dirk meldet sich persönlich mit einem unverbindlichen Gespräch — kein Callcenter, kein Verkaufsgespräch." } }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
+<!-- Grain-Overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
 <header class="nav" id="nav">
-  <a href="#hero" class="nav-logo" aria-label="Mindshift KI — Startseite">
-    <img src="mindshift-ki-logo-light.svg" alt="Mindshift KI">
-  </a>
-  <a href="#kontakt" class="nav-cta">Gespräch vereinbaren</a>
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top" aria-label="Dirk Brusch – Mindshift KI, zur Startseite">
+      <img src="mac-logo.png" alt="" class="nav__logo" width="40" height="40">
+      <span class="nav__brandtext"><strong>Dirk Brusch</strong><em>Mindshift KI</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a href="#keynotes">Angebot</a>
+      <a href="#ueber">Über mich</a>
+      <a href="#anfrage" class="nav__cta">Verfügbarkeit anfragen</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<!-- KAPITEL 1 · HERO -->
-<section class="hero dark" id="hero">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <div class="hero-eyebrow">
-        Für Vorstände und Geschäftsführer im deutschen Mittelstand,<br>
-        deren KI-Initiative nicht am Code scheitern wird.
+<a id="top"></a>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__inner">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Keynote Speaker · KI &amp; Mensch · seit 1988 im Wandel</p>
+      <h1 class="hero__title">Wir feiern die Technik&nbsp;— <em>und verlieren die Menschen.</em></h1>
+      <p class="hero__lead">Gerade jetzt rollt eine Welle über Millionen Menschen. Sie heißt Künstliche Intelligenz — und Ihre besten Leute fragen sich still: <em>„Werde ich hier überhaupt noch gebraucht?"</em> Meine Keynote gibt ihnen die Richtung zurück: <strong>Die KI ist das Werkzeug — der Mensch bleibt das Herz der Wertschöpfung.</strong></p>
+      <div class="hero__actions">
+        <a href="#anfrage" class="btn btn--gold">Verfügbarkeit anfragen</a>
       </div>
-
-      <h1 class="hero-title">
-        Wir feiern<br>
-        die Technik.<br>
-        Und verlieren<br>
-        die <em>Menschen.</em>
-      </h1>
-
-      <p class="hero-byline">
-        Business vor Technik. <span class="gold">Mensch vor Business.</span>
-      </p>
-
-      <div class="hero-cta-row">
-        <a href="#kontakt" class="cta-primary">30 Minuten — ohne Pitch</a>
-        <span class="cta-micro">kostenfrei &middot; vertraulich</span>
+      <p class="hero__micro">Seit 1988 durch sieben Technologiewellen gegangen — ich bringe die Ruhe, wenn andere hyperventilieren. Kein Pitch. Ein Gespräch.</p>
+    </div>
+    <div class="hero__portrait">
+      <div class="hero__frame">
+        <img src="bilder/portrait-dirk.jpg" alt="Dirk Brusch, Keynote Speaker" width="600" height="800" fetchpriority="high">
+      </div>
+      <div class="hero__cap">
+        <span class="hero__name">Dirk Brusch</span>
+        <span class="hero__role">Keynote Speaker · Mindshift KI</span>
       </div>
     </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true"><span></span></div>
+</section>
 
-    <div class="hero-portrait">
-      <div class="hero-portrait-frame">
-        <img src="portrait-dirk.png" alt="Dirk Brusch — Interim-Mandat für KI-Transformation" width="600" height="800" loading="eager" fetchpriority="high">
+<!-- ============ TRUST-LEISTE ============ -->
+<section class="trust" aria-label="Auszeichnungen und Bühnen">
+  <div class="trust__inner">
+    <span class="trust__eyebrow">Ausgezeichnet &amp; zertifiziert</span>
+    <img src="bilder/auszeichnungen.jpg" alt="Auszeichnungen: Excellent Experience – sehr gut, Top 111 Personal Brand 2026, Zertifizierter Top Speaker" class="trust__image">
+  </div>
+</section>
+
+<!-- ============ DAS PROBLEM · Angst benennen & normalisieren ============ -->
+<section class="section section--dark angst" id="angst">
+  <div class="wrap wrap--narrow reveal">
+    <p class="kicker kicker--gold">Die leise Frage</p>
+    <h2 class="h2 h2--light">Es gibt eine Frage, die nachts um drei niemand ausspricht.</h2>
+    <div class="angst__lines">
+      <p>Die leise Stimme, die fragt: <em>Bin ich bald überflüssig?</em></p>
+      <p>Das Gefühl im Meeting, wenn alle nicken — und Sie denken: <em>Ich komme nicht mehr mit.</em></p>
+      <p>Der Moment, in dem Ihre Leute ein KI-Tool öffnen — und es sofort wieder schließen.</p>
+    </div>
+    <p class="angst__lead2">Und Sie, an der Spitze, spüren es auch — nur leiser. <strong>Die Ersten, die gehen, sind die Guten. Die Letzten kündigen nicht — sie ertragen.</strong> Ihre KI-Initiative scheitert dann nicht an der Technik. Sie scheitert an Menschen, die innerlich längst zugemacht haben — und Sie merken es zu spät.</p>
+    <p class="angst__note">Das ist keine Schwäche. Das ist das Ehrlichste, was ein denkender Mensch in diesen Jahren fühlen kann. Und Angst, die niemand ausspricht, wird nicht kleiner. Sie wird nur einsamer.</p>
+  </div>
+</section>
+
+<!-- ============ DIE WENDE · Angst umkehren ============ -->
+<section class="section section--cream wende" id="wende">
+  <div class="wrap wrap--narrow reveal">
+    <p class="kicker">Der Wendepunkt</p>
+    <h2 class="h2">Diese Welle kommt nicht gegen Ihre Menschen.<br><em>Sie kommt für sie.</em></h2>
+    <div class="wende__grid">
+      <div class="wende__col">
+        <p class="wende__from">Aus „Bin ich gut genug?"</p>
+        <p class="wende__to">wird „Was kann ich noch werden?"</p>
       </div>
-      <div class="hero-portrait-caption">Dirk Brusch</div>
-      <div class="hero-portrait-role">Interim-Mandat für KI-Transformation</div>
+      <div class="wende__col">
+        <p class="wende__from">Aus „Ich kann das nicht"</p>
+        <p class="wende__to">wird „Ich kann das <u>noch</u> nicht."</p>
+      </div>
+    </div>
+    <p class="wende__lead">Die Technik war nie das Problem. Die Technik funktioniert. Was nicht funktioniert, ist die Brücke zwischen der Maschine — und dem Menschen davor. Genau diese Brücke baue ich. Von der Bühne aus. In 45 Minuten, die bleiben.</p>
+  </div>
+</section>
+
+<!-- ============ KEYNOTES ============ -->
+<section class="section section--light keynotes" id="keynotes">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="kicker">Das Angebot</p>
+      <h2 class="h2">Keine Keynote von der Stange. <em>Ihre</em> Keynote.</h2>
+      <p class="section__sub">Ich verkaufe keine Vorträge aus dem Katalog. Bevor ich auf Ihre Bühne gehe, will ich verstehen, was Ihre Menschen wirklich umtreibt — und baue daraus einen Vortrag, den nur Ihr Anlass bekommt.</p>
+    </div>
+
+    <div class="angebot__core reveal">
+      <div class="angebot__card">
+        <span class="angebot__badge">Immer individuell</span>
+        <h3>Ihre Keynote entsteht mit Ihnen — nicht im Katalog</h3>
+        <p>Zuerst höre ich zu: Ihr Anlass, Ihre Branche, die stille Frage, die im Raum steht. Dann baue ich eine Keynote, die sich anfühlt, als wäre sie nur für diesen einen Saal geschrieben — <strong>weil sie das ist</strong>.</p>
+        <ul class="angebot__why">
+          <li>Trifft <strong>genau Ihr Publikum</strong> — in seiner Sprache, mit seinen Sorgen.</li>
+          <li>Ihr Anlass wird zum <strong>Ereignis</strong>, nicht zum Programmpunkt.</li>
+          <li>Was im Saal zündet, wirkt am nächsten Morgen im Büro weiter.</li>
+        </ul>
+        <a href="#anfrage" class="btn btn--gold" data-keynote="Individuelle Keynote für unseren Anlass">Ihr Thema besprechen</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- KAPITEL 2 · DIE ZAHLEN HINTER DER ANGST -->
-<section class="chapter cream" id="zahlen">
-  <div class="chapter-inner reveal">
-    <div class="chapter-head">
-      <img src="mindshift-ki-logo.svg" alt="Mindshift KI" class="logo-inline">
+<!-- ============ SHOWREEL ============ -->
+<section class="section section--dark showreel" id="erleben">
+  <div class="wrap reveal">
+    <div class="section__head">
+      <p class="kicker kicker--gold">Live erleben</p>
+      <h2 class="h2 h2--light">Man muss es <em>hören</em>, um es zu spüren.</h2>
+      <p class="section__sub">Ein Vortrag über Menschen wirkt nicht auf Papier — er wirkt im Raum. Mein Showreel gebe ich deshalb nicht zum Wegklicken frei: Ich schicke Ihnen meinen aktuellen Bühnen-Zusammenschnitt <em>persönlich</em>, sobald Sie mich für Ihre Bühne in Betracht ziehen.</p>
     </div>
+    <div class="showreel__player">
+      <a class="showreel__frame" href="#anfrage" data-keynote="Showreel angefordert" aria-label="Showreel persönlich anfordern">
+        <img src="bilder/portrait-studio.jpg" alt="Dirk Brusch live auf der Bühne vor Publikum" loading="lazy" style="object-position:50% 35%">
+        <span class="showreel__scrim"></span>
+        <span class="showreel__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+        <span class="showreel__badge">Auf persönliche Anfrage</span>
+      </a>
+    </div>
+    <p class="showreel__cta reveal"><a href="#anfrage" class="btn btn--gold" data-keynote="Showreel angefordert">Showreel anfordern</a></p>
+  </div>
+</section>
 
-    <span class="label">Die Rechnung für Stillstand</span>
+<!-- ============ BÜHNEN / AUFTRITTE ============ -->
+<section class="section section--cream buehnen" id="buehnen">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="kicker">Öffentliche Bühnen</p>
+      <h2 class="h2">Bühnenerprobt — vor echtem Publikum.</h2>
+      <p class="section__sub">Drei große Bühnen in wenigen Monaten. Kein Studio, kein Rollenspiel — echtes Publikum, echte Wirkung.</p>
+    </div>
+    <div class="buehnenrow">
+      <article class="buehne reveal">
+        <div class="buehne__media"><img src="bilder/event-founder-summit.jpg" alt="Dirk Brusch auf der Founder Summit Inspiration Stage" loading="lazy" style="object-position:50% 28%"></div>
+        <div class="buehne__body">
+          <h3 class="buehne__name">Founder Summit 2026</h3>
+          <p class="buehne__sub">Inspiration Stage</p>
+          <p class="buehne__tag">April 2026 · vor großem Publikum</p>
+        </div>
+      </article>
+      <article class="buehne reveal">
+        <div class="buehne__media"><img src="bilder/event-ssb.jpg" alt="Dirk Brusch beim Silent Speaker Battle" loading="lazy" style="object-position:50% 16%"></div>
+        <div class="buehne__body">
+          <h3 class="buehne__name">Silent Speaker Battle</h3>
+          <p class="buehne__sub">Live vor Publikum</p>
+          <p class="buehne__tag">Juni 2026 · Live-Bühne</p>
+        </div>
+      </article>
+      <article class="buehne reveal">
+        <div class="buehne__media"><img src="bilder/event-speakerslam.jpg" alt="Dirk Brusch beim Internationalen Speaker Slam" loading="lazy" style="object-position:50% 18%"></div>
+        <div class="buehne__body">
+          <h3 class="buehne__name">Internationaler Speaker Slam</h3>
+          <p class="buehne__sub">Große Bühne, kurzer Slot, volle Wirkung</p>
+          <p class="buehne__tag">Juli 2026 · Internationale Bühne</p>
+        </div>
+      </article>
+    </div>
+    <p class="buehnen__discretion reveal"><strong>Warum hier keine Kundennamen stehen?</strong> Weil Diskretion vorgeht. Was ich in Unternehmen bewege, bleibt vertraulich — aus Respekt vor meinen Kunden. Dieselbe Verschwiegenheit dürfen Sie auch für Ihr Haus erwarten.</p>
+  </div>
+</section>
 
-    <h2 class="chapter-title" style="margin-top:1rem;">
-      In zwei Jahren wird KI nicht mehr <em>eingeführt</em>.<br>
-      Dann wird sie <em>vorausgesetzt</em>.
-    </h2>
-
-    <p class="lede">
-      Wer jetzt gestaltet, führt die nächste Dekade. Wer reagiert, verwaltet sie. Diese sechs Zahlen zeigen, warum die Mehrheit in der zweiten Gruppe landen wird &mdash; und warum Sie nicht müssen.
-    </p>
-
-    <div class="numbers-grid">
-      <div class="number-item">
-        <div class="big">74<span class="pct">%</span></div>
-        <div class="caption">aller Unternehmen schaffen keinen skalierbaren KI-Wert.</div>
-        <div class="source">BCG &middot; 2025</div>
-      </div>
-      <div class="number-item">
-        <div class="big">84<span class="pct">%</span></div>
-        <div class="caption">der KI-Fehlschläge sind auf Führungsversagen zurückzuführen.</div>
-        <div class="source">RAND Corporation</div>
-      </div>
-      <div class="number-item">
-        <div class="big">95<span class="pct">%</span></div>
-        <div class="caption">der Organisationen verzeichnen keinen messbaren ROI aus KI-Einsätzen.</div>
-        <div class="source">Harvard &middot; 2025 &middot; „AI Workslop"</div>
-      </div>
-      <div class="number-item">
-        <div class="big">63<span class="pct">%</span></div>
-        <div class="caption">der KI-Herausforderungen sind menschliche Faktoren, keine technischen.</div>
-        <div class="source">Prosci</div>
-      </div>
-      <div class="number-item">
-        <div class="big">88<span class="pct">%</span></div>
-        <div class="caption">Ausfallrate bei der Skalierung: Nur 4 von 33 Prototypen erreichen Produktionsreife.</div>
-        <div class="source">IDC</div>
-      </div>
-      <div class="number-item">
-        <div class="big">39<span class="pct">%</span></div>
-        <div class="caption">weisen EBIT-Beitrag aus KI nach &mdash; obwohl 88&nbsp;% sie nutzen.</div>
-        <div class="source">McKinsey &middot; 2025</div>
-      </div>
+<!-- ============ ÜBER MICH ============ -->
+<section class="section section--light ueber" id="ueber">
+  <div class="wrap ueber__grid">
+    <div class="ueber__portrait reveal">
+      <img src="bilder/portrait-ueber.jpg" alt="Dirk Brusch — Porträt" loading="lazy" style="object-position:50% 30%">
+    </div>
+    <div class="ueber__text reveal">
+      <p class="kicker">Wer spricht</p>
+      <h2 class="h2">Dirk Brusch — der Navigator im KI-Zeitalter</h2>
+      <p class="ueber__lead">Ich erinnere mich an den Abend, an dem ich einer Maschine zum ersten Mal eine Aufgabe gab, für die ich früher einen halben Tag gebraucht hätte. Sie war in zwanzig Sekunden fertig — besser, als ich gehofft hatte. Ich war <em>beeindruckt und erschrocken zugleich</em>. Mit vierundsechzig. Da wusste ich: Diese Frage — <em>werde ich noch gebraucht?</em> — trifft jeden. Auch mich.</p>
+      <p>Deshalb stehe ich mit Ihren Menschen im selben Wasser, nicht am sicheren Ufer. Und ich spreche nicht als KI-Opportunist: Ich habe seit 1988 jede Welle miterlebt — <strong>Dipl.-Ing. für Datentechnik, zertifizierter IBM-Engineer, 37 Jahre digitale Transformation</strong>, von den ersten LAN-Netzen im Frankfurter Bankenumfeld bis zu generativer KI.</p>
+      <p>Meine andere Hälfte ist der Mensch: fundierte Arbeit mit Verhaltenspsychologie und Stärkenprofilen. Diese seltene Symbiose aus <strong>Ingenieurslogik und Menschverständnis</strong> ist der Grund, warum es auf Ihrer Bühne nicht um Tools geht — sondern um Ihre Menschen. Ich bringe die Ruhe, wenn andere hyperventilieren. Erst hinschauen. Dann handeln.</p>
+      <ul class="ueber__facts">
+        <li><strong>Dipl.-Ing. Datentechnik</strong><span>TH Darmstadt · IBM-zertifiziert</span></li>
+        <li><strong>37 Jahre</strong><span>digitale Transformation seit 1988</span></li>
+        <li><strong>Expertenportal 2026</strong><span>„Excellent Experience — sehr gut"</span></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- KAPITEL 3 · DAS SYMPTOMBILD -->
-<section class="chapter dark" id="symptombild">
-  <div class="chapter-inner reveal">
-    <div class="chapter-head">
-      <img src="mindshift-ki-logo-light.svg" alt="Mindshift KI" class="logo-inline">
+<!-- ============ STECKBRIEF / QUICK FACTS ============ -->
+<section class="section section--dark steckbrief" id="steckbrief">
+  <div class="wrap reveal">
+    <div class="section__head">
+      <p class="kicker kicker--gold">Auf einen Blick</p>
+      <h2 class="h2 h2--light">Der Speaker-Steckbrief</h2>
+      <p class="section__sub">Alles, was Sie für die Planung brauchen — kompakt.</p>
     </div>
-
-    <h2 class="chapter-title">
-      Fünf Bruchstellen.<br>
-      Immer an den <em>gleichen</em> Punkten.<br>
-      Immer in der <em>gleichen</em> Reihenfolge.
-    </h2>
-
-    <p class="lede">
-      KI-Transformationen scheitern nicht zufällig. Sie scheitern an einer von fünf immer gleichen Bruchstellen &mdash; und meistens an der <em>ersten</em>, die nicht adressiert wird.
-    </p>
-
-    <div class="shift-axis">
-      <span>Anfang</span>
-      <span>Gewohnheit</span>
+    <div class="steckbrief__grid">
+      <div class="fact"><span class="fact__k">Formate</span><span class="fact__v">Keynote · Impuls · aktivierender Vortrag</span></div>
+      <div class="fact"><span class="fact__k">Dauer</span><span class="fact__v">20–60 Minuten, auf Ihren Slot zugeschnitten</span></div>
+      <div class="fact"><span class="fact__k">Sprache</span><span class="fact__v">Deutsch</span></div>
+      <div class="fact"><span class="fact__k">Themen</span><span class="fact__v">KI &amp; Mensch · Angst &amp; Mindset · Selbstreflexion · Zukunft der Arbeit</span></div>
+      <div class="fact"><span class="fact__k">Publikum</span><span class="fact__v">Mitarbeiter-Events · Führungstagungen · Kongresse</span></div>
+      <div class="fact"><span class="fact__k">Reise</span><span class="fact__v">DACH-weit, auf Anfrage darüber hinaus</span></div>
+      <div class="fact"><span class="fact__k">Vorab</span><span class="fact__v">Persönliches Briefing zu Ihrem Anlass</span></div>
+      <div class="fact"><span class="fact__k">Auszeichnung</span><span class="fact__v">Expertenportal 2026 — „Excellent Experience"</span></div>
     </div>
+    <p class="steckbrief__press">Speaker-One-Pager, Pressefotos und Vita erhalten Sie auf Anfrage. <a href="#anfrage">Kurz anfragen →</a></p>
+  </div>
+</section>
 
-    <div class="shift-grid">
-      <div class="shift-phase">
-        <div class="letter">S</div>
-        <div class="name">Sichten</div>
-        <div class="desc">Die Organisation schaut auf das falsche Problem. Ein Tool wird gesucht, bevor der Engpass benannt ist. Hier bricht fast jede zweite KI-Initiative &mdash; leise, bevor sie sichtbar wird.</div>
-        <div class="tag"><span class="article">Die</span>falsche Diagnose</div>
-      </div>
-      <div class="shift-phase">
-        <div class="letter">H</div>
-        <div class="name">Handeln</div>
-        <div class="desc">Piloten bleiben Piloten. Die ersten Erfolge stehen auf der Folie &mdash; aber nicht im Alltag. Die Organisation feiert das Proof, vergisst den Übergang. Hier verliert die Führung das erste Mal das Mandat.</div>
-        <div class="tag"><span class="article">Der</span>Pilot-Tod</div>
-      </div>
-      <div class="shift-phase">
-        <div class="letter">I</div>
-        <div class="name">Integrieren</div>
-        <div class="desc">Die KI hängt <em>neben</em> der Arbeit, nicht <em>in</em> ihr. Rollen bleiben unklar, Prozesse unverändert. Mitarbeiter weichen zurück in die alte Welt &mdash; und wirken dort plötzlich langsamer als vorher.</div>
-        <div class="tag"><span class="article">Der</span>Parallelbetrieb</div>
-      </div>
-      <div class="shift-phase">
-        <div class="letter">F</div>
-        <div class="name">Fokussieren</div>
-        <div class="desc">Die Toolsammlung wächst schneller als die Beherrschung. Jede Abteilung hat ihren eigenen Assistenten. Keiner weiß mehr, was an welcher Stelle warum läuft. Die Aufsicht ist längst verloren.</div>
-        <div class="tag"><span class="article">Der</span>Wildwuchs</div>
-      </div>
-      <div class="shift-phase">
-        <div class="letter">T</div>
-        <div class="name">Tragen</div>
-        <div class="desc">Nach dem Projekt kippt alles zurück. Sobald der Berater weg ist, fällt die Organisation in die alte Routine. Was bleibt, ist eine teure Erinnerung an einen Aufbruch, den niemand mehr lebt.</div>
-        <div class="tag"><span class="article">Der</span>Rückfall</div>
-      </div>
+<!-- ============ FAQ ============ -->
+<section class="section section--light faq" id="faq">
+  <div class="wrap wrap--narrow">
+    <div class="section__head reveal">
+      <p class="kicker">Häufige Fragen</p>
+      <h2 class="h2">Was Veranstalter am häufigsten fragen.</h2>
     </div>
-
-    <div class="shift-closing">
-      <p>
-        An welcher dieser fünf Stellen steht Ihr Haus gerade?<br>
-        Sie wissen es, noch bevor Sie zu Ende gelesen haben. Und Sie wissen auch: Die nächste Bruchstelle kommt in der Reihenfolge oben.
-      </p>
+    <div class="faq__list reveal">
+      <details class="faq__item">
+        <summary>Worüber spricht Dirk Brusch?</summary>
+        <div class="faq__a"><p>Über Künstliche Intelligenz und den Menschen: wie Belegschaften den KI-Wandel tragen, statt ihn zu fürchten. Die Kernbotschaft: <em>Wir feiern die Technik – und verlieren die Menschen.</em> Die KI ist das Werkzeug, der Mensch bleibt das Herz der Wertschöpfung.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Für welche Anlässe und welches Publikum eignet sich die Keynote?</summary>
+        <div class="faq__a"><p>Für Mitarbeiter-Events, Führungskräftetagungen, Kick-offs, Jahresauftakte und Kongresse — überall, wo Menschen durch Veränderung und den KI-Wandel geführt werden sollen.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Welche Formate und Vortragslängen gibt es?</summary>
+        <div class="faq__a"><p>Keynote oder Impulsvortrag, 20 bis 60 Minuten, auf Ihren Slot zugeschnitten. Vortragssprache ist Deutsch.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Gibt es Standard-Keynotes von der Stange?</summary>
+        <div class="faq__a"><p>Nein. Jede Keynote wird individuell entwickelt — zugeschnitten auf Ihre Branche, Ihren Anlass und Ihr Publikum.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Was macht Dirk Brusch als Speaker einzigartig?</summary>
+        <div class="faq__a"><p>Die seltene Symbiose aus Ingenieurslogik (Dipl.-Ing. für Datentechnik, IBM-zertifiziert, 37 Jahre digitale Transformation seit 1988) und Verhaltenspsychologie. Ausgezeichnet unter anderem mit dem <strong>Excellence Award von Hermann Scherer</strong> und als <strong>Top 111 Personal Brand 2026</strong>.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Wie kann ich Dirk Brusch für eine Veranstaltung buchen?</summary>
+        <div class="faq__a"><p>Über das <a href="#anfrage">Anfrageformular</a> auf dieser Seite. Dirk meldet sich persönlich mit einem unverbindlichen Gespräch — kein Callcenter, kein Verkaufsgespräch.</p></div>
+      </details>
     </div>
   </div>
 </section>
 
-<!-- KAPITEL 4 · WAS ES KOSTET, NICHTS ZU TUN -->
-<section class="chapter cream" id="kosten">
-  <div class="chapter-inner reveal">
-    <div class="chapter-head">
-      <img src="mindshift-ki-logo.svg" alt="Mindshift KI" class="logo-inline">
+<!-- ============ ABLAUF ============ -->
+<section class="section section--cream ablauf" id="ablauf">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="kicker">So einfach ist es</p>
+      <h2 class="h2">Von der Anfrage zur Bühne — in drei Schritten.</h2>
     </div>
+    <ol class="ablauf__steps">
+      <li class="ablauf__step reveal">
+        <span class="ablauf__num">01</span>
+        <h3>Sie erzählen mir von Ihrem Anlass</h3>
+        <p>Kurze Anfrage über das Formular. Ich melde mich persönlich — kein Callcenter, kein Verkaufsgespräch.</p>
+      </li>
+      <li class="ablauf__step reveal">
+        <span class="ablauf__num">02</span>
+        <h3>Wir schneiden die Keynote auf Sie zu</h3>
+        <p>In einem Gespräch klären wir Publikum, Ziel und Ton. Sie bekommen eine Keynote, die zu Ihren Menschen passt — nicht von der Stange.</p>
+      </li>
+      <li class="ablauf__step reveal">
+        <span class="ablauf__num">03</span>
+        <h3>Ich stehe auf Ihrer Bühne</h3>
+        <p>Verlässlich, vorbereitet, präsent — mit einer Botschaft, die nach dem Applaus weiterwirkt.</p>
+      </li>
+    </ol>
+  </div>
+</section>
 
-    <h2 class="chapter-title">
-      Die <em>unbequeme</em> Seite der Rechnung,<br>
-      die niemand aufmacht.
-    </h2>
-
-    <p class="lede">
-      Über die Kosten einer KI-Einführung wird geredet. Über die Kosten, keine zu machen, fast nie. Dabei sind die unsichtbaren Kosten meistens die größeren &mdash; und sie stehen in keiner Budgetplanung. Fünf Posten, die trotzdem jeden Monat abgebucht werden.
-    </p>
-
-    <div class="cost-grid">
-      <div class="cost-card">
-        <div class="card-label">Der erste Posten</div>
-        <h4>Die besten Menschen gehen leise.</h4>
-        <p>Wer wachsen will, bleibt nicht in einer Organisation, die ihm das Werkzeug der Zeit verwehrt. Die Ersten, die Sie leise verlassen, sind die Gestalter. Diejenigen, die bleiben, verwalten nur noch den Stillstand.</p>
-      </div>
-      <div class="cost-card">
-        <div class="card-label">Der zweite Posten</div>
-        <h4>Der Wettbewerb wird unmerklich schneller.</h4>
-        <p>Nicht dramatisch schneller. Leise. Kundenantworten in Minuten statt Tagen. Angebote am selben Vormittag. Irgendwann spürbar. Nicht mehr einholbar.</p>
-      </div>
-      <div class="cost-card">
-        <div class="card-label">Der dritte Posten</div>
-        <h4>Was nicht geregelt ist, geschieht trotzdem.</h4>
-        <p>Wer intern nichts anbietet, sorgt dafür, dass extern alles genutzt wird. Ohne Regeln. Ohne Protokoll. Ohne Verantwortlichkeit. Das Risiko ist im Haus &mdash; nur noch nicht auf der Tagesordnung.</p>
-      </div>
-      <div class="cost-card">
-        <div class="card-label">Der vierte Posten</div>
-        <h4>Die Führung verliert unmerklich das Mandat.</h4>
-        <p>Wer bei der größten Veränderung seit dem Internet schweigt, wird nicht als Stratege wahrgenommen, sondern als jemand, der sie verschlafen hat. Das Selbstbild hält dagegen. Die Wirkung auf die Mannschaft nicht.</p>
-      </div>
+<!-- ============ ERFOLGSVISION + STAKES ============ -->
+<section class="section section--light vision" id="vision">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="kicker">Warum jetzt</p>
+      <h2 class="h2">Zwei Wege — und Sie entscheiden, welchen Ihre Menschen gehen.</h2>
     </div>
-
-    <div class="cost-final">
-      <div class="card-label">Der fünfte Posten &mdash; und der teuerste.</div>
-      <h4>Das Fenster zum Gestalten schließt sich.</h4>
-      <p>In zwei Jahren wird KI nicht mehr „eingeführt". Dann wird sie vorausgesetzt &mdash; von Kunden, von Mitarbeitern, von Aufsicht. Wer jetzt beginnt, gestaltet. Wer in zwei Jahren beginnt, reagiert.</p>
+    <div class="vision__grid">
+      <article class="vision__card vision__card--yes reveal">
+        <span class="vision__tag">Nach der Keynote</span>
+        <ul class="vision__list">
+          <li>Aus Abwehr wird Neugier — spürbar im Raum und am nächsten Morgen im Büro.</li>
+          <li>Ihre Menschen fühlen sich gesehen statt bedroht — und gehen mit.</li>
+          <li>Führungskräfte bekommen die Sprache, um Angst in Energie zu verwandeln.</li>
+          <li>Die Selbstreflexion wirkt weiter — lange nach dem letzten Applaus.</li>
+        </ul>
+      </article>
+      <article class="vision__card vision__card--no reveal">
+        <span class="vision__tag vision__tag--warn">Wenn nichts passiert</span>
+        <ul class="vision__list">
+          <li>Die Angst bleibt unausgesprochen — und wird nicht kleiner, nur einsamer.</li>
+          <li>Ihre besten Leute machen innerlich zu, während die Welle weiterrollt.</li>
+          <li>KI-Projekte scheitern an der Brücke zum Menschen — nicht an der Technik.</li>
+          <li>Aus „Ich kann das noch nicht" wird „zu spät".</li>
+        </ul>
+      </article>
     </div>
+    <p class="vision__cta reveal"><a href="#anfrage" class="btn btn--gold">Meine Keynote anfragen</a></p>
+  </div>
+</section>
 
-    <div class="cost-cta">
-      <a href="#kontakt" class="cta-primary">Ich will nicht länger warten</a>
+<!-- ============ AWARD-CLINCHER ============ -->
+<section class="section section--cream clincher" id="award">
+  <div class="wrap clincher__grid reveal">
+    <div class="clincher__media">
+      <img src="bilder/hermann-scherer-award.jpg" alt="Dirk Brusch erhält den Excellence Award von Hermann Scherer persönlich" loading="lazy">
+    </div>
+    <div class="clincher__text">
+      <p class="kicker">Bevor Sie entscheiden</p>
+      <h2 class="h2">Excellence Award — von Hermann Scherer persönlich überreicht.</h2>
+      <p class="clincher__lead">Wenn einer der bekanntesten Speaker-Macher Europas Ihnen den Excellence Award in die Hand gibt, ist das kein Zufall. Es ist das Ergebnis von Bühnenreife und einer Botschaft, die ankommt.</p>
+      <p class="clincher__note">Genau diese Wirkung bringe ich auf Ihre Veranstaltung — zugeschnitten auf Ihre Menschen.</p>
+      <a href="#anfrage" class="btn btn--gold">Verfügbarkeit anfragen</a>
     </div>
   </div>
 </section>
 
-<!-- KAPITEL 5 · ZWÖLF MONATE SPÄTER -->
-<section class="chapter ivory" id="fallstudie">
-  <div class="chapter-inner reveal">
-    <div class="chapter-head">
-      <img src="mindshift-ki-logo.svg" alt="Mindshift KI" class="logo-inline">
+<!-- ============ ANFRAGE / KONTAKT ============ -->
+<section class="section section--navy anfrage" id="anfrage">
+  <div class="wrap anfrage__grid">
+    <div class="anfrage__intro reveal">
+      <p class="kicker kicker--gold">Der nächste Schritt</p>
+      <h2 class="h2 h2--light">Holen Sie den Menschen zurück auf Ihre Bühne.</h2>
+      <p class="anfrage__lead">Erzählen Sie mir kurz von Ihrer Veranstaltung. Ich melde mich persönlich — nicht mit einem Angebot von der Stange, sondern mit einem Gespräch darüber, was Ihr Publikum wirklich braucht.</p>
+      <ul class="anfrage__promise">
+        <li>Persönliche Rückmeldung — von mir, nicht vom Sekretariat</li>
+        <li>Keynote oder Impuls — individuell für Ihren Anlass</li>
+        <li>Unverbindlich, ohne Verpflichtung</li>
+      </ul>
     </div>
 
-    <h2 class="chapter-title">
-      Zwölf Monate später.<br>
-      Derselbe Raum. <em>Andere</em> Geschichte.
-    </h2>
-
-    <p class="lede">
-      Was folgt, ist keine Versprechens-Tabelle. Es ist eine anonymisierte Rückblende aus einer tatsächlichen Begleitung &mdash; ein Unternehmen im produzierenden Mittelstand, rund 420 Mitarbeiter. Ein Jahr vorher saßen wir gemeinsam im selben Konferenzraum, in dem heute dieser Text entsteht.
-    </p>
-
-    <div class="value-cards">
-      <div class="value-card vorher">
-        <div class="card-label">Vor zwölf Monaten</div>
-        <p>Im Meeting saß der Personalleiter schweigend. Die KI-Initiative war beschlossen, die Tools ausgewählt, das Budget bewilligt. Niemand im Raum wusste, wer sie eigentlich trug. Zwei Türen weiter schrieb eine Sachbearbeiterin ihre dritte Erklärungs-Mail des Tages &mdash; niemand hatte ihr den neuen Assistenten erklärt. Sie hat ihn nie benutzt.</p>
-      </div>
-      <div class="value-card heute">
-        <div class="card-label">Heute</div>
-        <p>Derselbe Personalleiter spricht als Erster. Bevor über das nächste Werkzeug entschieden wird, legt er drei Fragen auf den Tisch &mdash; die dritte lautet: <em>„Wer im Haus hat davor gerade Angst?"</em> Der Vorstand antwortet. Dieselbe Sachbearbeiterin erklärt heute ihren Kolleginnen, wie sie den Assistenten lenkt. Sie hat ihm einen Namen gegeben.</p>
-      </div>
-    </div>
-
-    <div class="kpi-row">
-      <div class="kpi">
-        <div class="big">&ndash;38&nbsp;%</div>
-        <div class="kpi-label">Durchlaufzeit<br>im Kernprozess</div>
-      </div>
-      <div class="kpi">
-        <div class="sub">vorher 11 Monate</div>
-        <div class="big">3 Monate</div>
-        <div class="kpi-label">bis zur ersten<br>spürbaren Wirkung</div>
-      </div>
-      <div class="kpi">
-        <div class="big">0</div>
-        <div class="kpi-label">Kündigungen<br>in Schlüsselrollen</div>
-      </div>
-    </div>
-
-    <p class="value-closing">
-      Was sich wirklich verändert hat, steht auf keiner dieser Zahlen. Es ist die Stille, die vorher im Konferenzraum war &mdash; und die heute weg ist. Weil die richtigen Leute jetzt sprechen. Und die richtigen Fragen gestellt werden, bevor das Werkzeug gekauft wird.
-    </p>
-  </div>
-</section>
-
-<!-- KAPITEL 6 · DER NÄCHSTE SCHRITT -->
-<section class="chapter invitation dark" id="kontakt">
-  <div class="chapter-inner reveal">
-    <div class="chapter-head">
-      <img src="mindshift-ki-logo-light.svg" alt="Mindshift KI" class="logo-inline">
-    </div>
-
-    <h2 class="chapter-title">
-      Verwalten Sie den Stillstand &mdash;<br>
-      oder <em>reißen</em> Sie das Steuer herum?
-    </h2>
-
-    <p class="invitation-body-text">
-      Lassen Sie uns in <em>30 Minuten</em> klären, an welcher der fünf SHIFT-Bruchstellen Ihre KI-Initiative gerade steht &mdash; kostenfrei, ohne Pitch.
-    </p>
-
-    <p class="invitation-closing-line">
-      Sie sind der Einzige, der diese Entscheidung trifft. <span class="strong-ivory">Sie.</span>
-    </p>
-
-    <div class="invitation-rules">
-      <div class="rules-head">Meine Arbeitsweise &mdash; auf einen Blick</div>
-      <div class="rule">
-        <strong>Mensch zuerst. Dann Geschäft. Dann Technik.</strong>
-        Drei Ebenen, eine Reihenfolge. Wer sie dreht, wird sie später teuer erklären.
-      </div>
-      <div class="rule">
-        <strong>Wirkung vor Aktivität.</strong>
-        Keine Phase wird abgeschlossen, bevor sie gewirkt hat. Was nicht wirkt, wird nicht fortgeführt.
-      </div>
-      <div class="rule">
-        <strong>Ein Verantwortlicher. Ein Netzwerk, das trägt.</strong>
-        Ich führe Ihr Vorhaben persönlich. Keine Subunternehmer-Kette. Ein Ensemble mit einem Dirigenten.
-      </div>
-      <div class="rule">
-        <strong>Keine Pakete. Preis nach Analyse.</strong>
-        Ich mache ein Angebot, das zu Ihrem Problem passt. Zuerst über Wert &mdash; erst danach über Preis.
-      </div>
-    </div>
-
-    <div class="invitation-steps">
-      <div class="invitation-step">
-        <div class="step-num">1.</div>
-        <h5>Das Erstgespräch</h5>
-        <p>30 Minuten per Videokonferenz. Sie beschreiben Ihre Lage. Ich höre zu und prüfe, ob eine Zusammenarbeit Sinn hat.</p>
-      </div>
-      <div class="invitation-step">
-        <div class="step-num">2.</div>
-        <h5>Das Vor-Assessment</h5>
-        <p>Strukturierter Fragenkatalog. Erstes Lagebild zu Engpässen, Bereitschaft und Datenlage. Kostenfrei, verbindlich ausgewertet.</p>
-      </div>
-      <div class="invitation-step">
-        <div class="step-num">3.</div>
-        <h5>Das Angebot</h5>
-        <p>Ein Angebot, das zu Ihrer Lage passt &mdash; inhaltlich und im Aufwand. Dann entscheiden Sie.</p>
-      </div>
-    </div>
-
-    <form action="https://api.mindshift-ki.de/contact.php" method="POST" class="contact-form" id="contact-form" novalidate>
-      <div class="field">
-        <label for="vorname">Vorname</label>
-        <input type="text" id="vorname" name="vorname" required autocomplete="given-name">
-      </div>
-      <div class="field">
-        <label for="nachname">Nachname</label>
-        <input type="text" id="nachname" name="nachname" required autocomplete="family-name">
-      </div>
-      <div class="field">
-        <label for="email">E-Mail</label>
-        <input type="email" id="email" name="email" required autocomplete="email" placeholder="ihre@email.de">
-      </div>
-      <div class="field">
-        <label for="telefon">Telefon</label>
-        <input type="tel" id="telefon" name="telefon" required autocomplete="tel">
-      </div>
-      <div class="field">
-        <label for="unternehmen">Unternehmen</label>
-        <input type="text" id="unternehmen" name="unternehmen" required autocomplete="organization">
-      </div>
-      <div class="field">
-        <label for="rolle">Rolle</label>
-        <select id="rolle" name="rolle" required>
-          <option value="" disabled selected>Bitte wählen</option>
-          <option value="vorstand-gf">Vorstand / Geschäftsführung</option>
-          <option value="bereichsleitung">Bereichs-/Abteilungsleitung</option>
-          <option value="hr-people">HR / People &amp; Culture</option>
-          <option value="transformation">Transformation / Change</option>
-          <option value="it-digital">IT / Digital</option>
-          <option value="sonstige">Sonstige</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="groesse">Unternehmensgröße</label>
-        <select id="groesse" name="groesse" required>
-          <option value="" disabled selected>Bitte wählen</option>
-          <option value="lt-50">Unter 50 Mitarbeitende</option>
-          <option value="50-250">50 &ndash; 250 Mitarbeitende</option>
-          <option value="250-1000">250 &ndash; 1.000 Mitarbeitende</option>
-          <option value="gt-1000">Über 1.000 Mitarbeitende</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="standort">An welcher Bruchstelle stehen Sie?</label>
-        <select id="standort" name="standort" required>
-          <option value="" disabled selected>Bitte wählen</option>
-          <option value="am-anfang">Noch am Anfang &mdash; tastet sich heran</option>
-          <option value="pilot-stuck">Erste Piloten laufen &mdash; skalieren aber nicht</option>
-          <option value="neustart">Braucht einen echten Neustart</option>
-          <option value="skalieren">Bereits weit &mdash; will systematisch skalieren</option>
-        </select>
-      </div>
-      <div class="field full">
-        <label for="nachricht">Kurze Beschreibung Ihrer Lage (optional)</label>
-        <textarea id="nachricht" name="nachricht" rows="3" placeholder="Was treibt Sie gerade um?"></textarea>
-      </div>
-
-      <div class="honeypot" aria-hidden="true">
-        <label for="_gotcha">Bitte leer lassen</label>
-        <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
-      </div>
-
-      <!-- Zeit-Falle: wird per JS mit der seit Seitenaufruf vergangenen Zeit (ms) gefuellt -->
-      <input type="hidden" name="elapsed_ms" id="elapsed_ms" value="">
-
-
-      <label class="consent">
-        <input type="checkbox" id="consent" name="consent" required>
-        <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zum Zweck der Kontaktaufnahme zu.</span>
-      </label>
-
-      <div class="submit-row">
-        <button type="submit" class="cta-primary">Gespräch vereinbaren</button>
-        <span class="cta-micro">kostenfrei &middot; 30 Min &middot; ohne Pitch</span>
-      </div>
-
-      <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
-    </form>
-
-    <div class="invitation-contact">
-      <div class="author">
-        <img src="portrait-dirk-invitation.png" alt="Dirk Brusch" class="photo" loading="lazy">
-        <div>
-          <div class="name">Dirk Brusch</div>
-          <div class="role">Mindshift KI</div>
-          <div class="tag">Mensch führt. KI folgt.</div>
+    <form class="anfrage__form reveal" id="anfrageForm" novalidate>
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="text" name="_website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_ts" id="tsField" value="">
+      <input type="hidden" name="keynote" id="keynoteField" value="">
+      <div class="field-row">
+        <div class="field">
+          <label for="vorname">Vorname</label>
+          <input type="text" id="vorname" name="vorname" required autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label for="nachname">Nachname</label>
+          <input type="text" id="nachname" name="nachname" required autocomplete="family-name">
         </div>
       </div>
-      <div class="details">
-        <a href="mailto:dirk.brusch@mindshift-ki.de">dirk.brusch@mindshift-ki.de</a><br>
-        <a href="https://mindshift-ki.de">mindshift-ki.de</a>
+      <div class="field-row">
+        <div class="field">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="telefon">Telefon</label>
+          <input type="tel" id="telefon" name="telefon" autocomplete="tel">
+        </div>
       </div>
-    </div>
+      <div class="field">
+        <label for="unternehmen">Unternehmen / Veranstalter</label>
+        <input type="text" id="unternehmen" name="unternehmen" required autocomplete="organization">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="anlass">Anlass</label>
+          <select id="anlass" name="anlass">
+            <option value="">Bitte wählen</option>
+            <option value="mitarbeiterevent">Mitarbeiter-Event</option>
+            <option value="fuehrungstagung">Führungskräfte-Tagung</option>
+            <option value="jahresauftakt">Jahresauftakt / Kick-off</option>
+            <option value="kongress">Kongress / Fachtagung</option>
+            <option value="sonstige">Sonstiger Anlass</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="termin">Wunschtermin (falls bekannt)</label>
+          <input type="text" id="termin" name="termin" placeholder="z. B. Herbst 2026">
+        </div>
+      </div>
+      <div class="field">
+        <label for="nachricht">Worum geht es? <span class="field__opt">(optional)</span></label>
+        <textarea id="nachricht" name="nachricht" rows="4" placeholder="Ihr Publikum, Ihr Ziel, Ihre Fragen …"></textarea>
+      </div>
+      <button type="submit" class="btn btn--gold btn--block" id="submitBtn">Meine Anfrage senden</button>
+      <p class="form__micro"><strong>Persönliche Rückmeldung — von mir selbst.</strong> Ihre Angaben nutze ich ausschließlich zur Beantwortung — keine Weitergabe, keine Newsletter.</p>
+      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
   </div>
 </section>
 
+<!-- ============ FOOTER ============ -->
 <footer class="footer">
-  <div class="footer-inner">
-    <div>
-      <span class="footer-brand">Mindshift KI</span>
-      &nbsp;&middot;&nbsp;
-      <span class="footer-tag">Mensch führt. KI folgt.</span>
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <img src="mac-logo.png" alt="" class="footer__logo" width="34" height="34">
+      <span><strong>Dirk Brusch</strong> · Mindshift KI</span>
     </div>
-    <div class="footer-links">
+    <p class="footer__claim">Wir feiern die Technik — und verlieren die Menschen. Höchste Zeit, das zu ändern.</p>
+    <nav class="footer__links" aria-label="Rechtliches">
+      <a href="#keynotes">Angebot</a>
+      <a href="#ueber">Über mich</a>
+      <a href="#anfrage">Anfragen</a>
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
-      <button type="button" id="consent-reopen" class="footer-linkbtn">Cookie-Einstellungen</button>
-      <a href="https://www.linkedin.com/in/dirkbrusch" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
+      <button type="button" id="consent-reopen" class="footer__linkbtn">Cookie-Einstellungen</button>
+    </nav>
+    <p class="footer__copy">© 2026 Dirk Brusch · Mindshift KI</p>
   </div>
 </footer>
 
-<!-- Consent-Banner (DSGVO / TDDDG) -->
-<div id="consent-banner" class="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie-Einstellungen" hidden>
-  <div class="consent-inner">
-    <h3 class="consent-title">Bevor es weitergeht.</h3>
-    <p class="consent-text">
-      Diese Website verwendet nur Cookies und Dienste, die Sie ausdrücklich freigeben.
-      <strong>Essenzielle Funktionen</strong> sind immer aktiv. <strong>Statistik</strong>
-      (Google Analytics) und <strong>Design-Schriften</strong> (Google Fonts) laden wir erst
-      nach Ihrer Einwilligung. Sie können Ihre Auswahl jederzeit über den Link „Cookie-Einstellungen"
-      im Fußbereich widerrufen oder ändern. Details in der
-      <a href="datenschutz.html">Datenschutzerklärung</a>.
-    </p>
-    <div class="consent-options">
-      <label><input type="checkbox" checked disabled> <span>Essenziell (immer aktiv)</span></label>
-      <label><input type="checkbox" id="consent-fonts"> <span>Design-Schriften (Google Fonts)</span></label>
-      <label><input type="checkbox" id="consent-analytics"> <span>Statistik (Google Analytics)</span></label>
+<!-- Klebriger Mobile-CTA -->
+<div class="stickycta" id="stickyCta" aria-hidden="true">
+  <div class="stickycta__text"><strong>Keynote gesucht?</strong><span>Für ein Gespräch — nicht für einen Pitch.</span></div>
+  <a href="#anfrage" class="btn btn--gold btn--sm">Meine Anfrage</a>
+</div>
+
+<!-- Consent-Banner (DSGVO / Google Analytics 4) -->
+<div id="consent-banner" class="consent" role="dialog" aria-live="polite" aria-label="Cookie-Einstellungen" hidden>
+  <div class="consent__inner">
+    <div class="consent__body">
+      <h3 class="consent__title">Kurz zu Ihrer Privatsphäre.</h3>
+      <p class="consent__text">Diese Website nutzt nur essenzielle Cookies. <strong>Statistik (Google Analytics)</strong> laden wir erst nach Ihrer Einwilligung — anonymisiert, ohne Werbe-Tracking. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+      <label class="consent__opt"><input type="checkbox" id="consent-analytics"> <span>Statistik (Google Analytics)</span></label>
     </div>
-    <div class="consent-actions">
-      <button type="button" class="cta-secondary" id="consent-decline">Nur Essenzielles</button>
-      <button type="button" class="cta-secondary" id="consent-save">Auswahl speichern</button>
-      <button type="button" class="cta-primary" id="consent-accept-all">Alle akzeptieren</button>
+    <div class="consent__actions">
+      <button type="button" class="btn btn--ghost btn--sm" id="consent-decline">Nur Essenzielles</button>
+      <button type="button" class="btn btn--ghost btn--sm" id="consent-save">Auswahl speichern</button>
+      <button type="button" class="btn btn--gold btn--sm" id="consent-accept-all">Alle akzeptieren</button>
     </div>
   </div>
 </div>
 
-<script src="consent.js" defer></script>
-<script src="script.js" defer></script>
+<script src="consent.js?v=1" defer></script>
+<script src="script.js?v=1"></script>
 </body>
 </html>
