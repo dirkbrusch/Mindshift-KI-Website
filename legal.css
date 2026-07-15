@@ -9,6 +9,12 @@
   min-height: 100vh;
 }
 
+.nav-logo img {
+  height: 46px;
+  width: auto;
+  display: block;
+}
+
 .legal-container {
   max-width: 820px;
   margin: 0 auto;
