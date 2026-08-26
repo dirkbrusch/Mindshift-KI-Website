@@ -327,6 +327,10 @@ em{font-style:italic}
 .clincher__media img{width:100%;height:auto;display:block}
 .clincher__lead{font-size:1.12rem;color:var(--stone-700);margin:18px 0 14px;line-height:1.65}
 .clincher__note{color:var(--stone-500);margin-bottom:26px}
+.clincher__presse{border-left:3px solid var(--gold);padding-left:16px;margin:0 0 20px;color:var(--stone-700);font-style:italic;line-height:1.6}
+.clincher__quelle{display:block;margin-top:7px;font-style:normal;font-size:.9rem;color:var(--stone-500)}
+.clincher__quelle a{color:var(--stone-500);text-decoration:underline;text-underline-offset:3px}
+.clincher__quelle a:hover{color:var(--gold)}
 @media (max-width:900px){.clincher__grid{grid-template-columns:1fr;gap:30px}}
 
 /* ============ FAQ ============ */
