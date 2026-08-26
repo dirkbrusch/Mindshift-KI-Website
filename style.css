@@ -357,25 +357,15 @@ em{font-style:italic}
 .stickycta .btn{flex-shrink:0}
 
 /* ============ BUCH ============ */
-.buch__grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
-.buch__cover{display:flex;justify-content:center}
-.buch__mock{
-  width:280px;aspect-ratio:2/3;border-radius:6px 12px 12px 6px;
-  background:linear-gradient(150deg,var(--navy-light),var(--navy));
-  border:1px solid rgba(193,163,85,.3);box-shadow:var(--shadow-l),-8px 0 0 rgba(0,0,0,.25);
-  padding:44px 34px;display:flex;flex-direction:column;
-  position:relative;overflow:hidden;
-}
-.buch__mock::before{content:"";position:absolute;top:0;bottom:0;left:0;width:12px;background:rgba(0,0,0,.28)}
-.buch__mocklabel{font-size:.65rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-light);margin-bottom:auto}
-.buch__mocktitle{font-family:var(--ff-display);font-size:1.6rem;font-weight:700;color:#fff;line-height:1.18;margin-bottom:14px}
-.buch__mocksub{font-size:.9rem;color:var(--stone-300);line-height:1.4;margin-bottom:24px}
-.buch__mockauthor{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light)}
-.buch__lead{font-family:var(--ff-display);font-style:italic;font-size:1.25rem;color:#fff;line-height:1.6;margin:24px 0 32px;padding-left:22px;border-left:2px solid var(--gold)}
-.buch__bundle{background:rgba(255,255,255,.05);border:1px solid rgba(193,163,85,.22);border-radius:var(--radius);padding:26px 28px;margin-bottom:28px}
-.buch__bundletitle{font-family:var(--ff-display);font-size:1.3rem;color:var(--gold-light);margin-bottom:12px}
-.buch__bundle p{color:var(--stone-300);font-size:1rem}
-.buch__bundlenote{margin-top:12px;font-size:.86rem!important;color:var(--stone-500)!important}
+/* Buch-Sektion (cream) — eingebaut 24.08.2026. Ersetzt den toten .buch__*-Block
+   der Vorgaengerversion (Cover-Mockup + Bundle), der von keiner HTML-Datei mehr
+   genutzt wurde. Bewusst ohne generische .buch p-Regel: die haette wegen hoeherer
+   Spezifitaet die margin-top-Werte der Klassen ueberschrieben. */
+.buch__sub{margin-top:14px;font-size:1.15rem;font-style:italic;color:var(--stone-500)}
+.buch__lead{margin-top:30px;font-size:1.12rem;line-height:1.78;color:var(--ink)}
+.buch__text{margin-top:18px;line-height:1.78;color:var(--ink)}
+.buch__meta{margin-top:36px;font-size:.78rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold-dark);font-weight:600}
 
 /* ============ ÜBER ============ */
 .ueber__grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
@@ -473,8 +463,7 @@ em{font-style:italic}
   .kcard--feature{flex-direction:column}
   .kcard--feature .kcard__media{flex:none}
   .kcard--feature .kcard__media img{min-height:320px}
-  .buch__grid,.ueber__grid,.anfrage__grid{grid-template-columns:1fr;gap:44px}
-  .buch__cover{order:-1}
+  .ueber__grid,.anfrage__grid{grid-template-columns:1fr;gap:44px}
   .ueber__portrait{max-width:420px;margin:0 auto}
 }
 @media (max-width:768px){
@@ -509,5 +498,4 @@ em{font-style:italic}
   .wrap{padding:0 20px}
   .trust__badges{gap:16px}
   .trust__award{height:76px}
-  .buch__mock{width:230px}
 }
