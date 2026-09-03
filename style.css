@@ -331,6 +331,15 @@ em{font-style:italic}
 .clincher__quelle{display:block;margin-top:7px;font-style:normal;font-size:.9rem;color:var(--stone-500)}
 .clincher__quelle a{color:var(--stone-500);text-decoration:underline;text-underline-offset:3px}
 .clincher__quelle a:hover{color:var(--gold)}
+.clincher__clip{display:flex;align-items:center;gap:16px;margin:2px 0 26px;padding:12px 14px;border:1px solid var(--stone-100);border-radius:var(--radius);background:var(--off-white);transition:box-shadow .25s var(--ease),transform .25s var(--ease),border-color .25s var(--ease)}
+.clincher__clip:hover,.clincher__clip:focus-visible{box-shadow:var(--shadow-m);border-color:var(--gold);transform:translateY(-2px);outline:none}
+.clincher__clip-img{width:88px;flex:0 0 auto;height:auto;border-radius:6px;box-shadow:var(--shadow-s)}
+.clincher__clip-body{display:flex;flex-direction:column;gap:5px}
+.clincher__clip-cta{font-weight:700;color:var(--navy);font-size:1rem}
+.clincher__clip:hover .clincher__clip-cta,.clincher__clip:focus-visible .clincher__clip-cta{color:var(--gold-dark)}
+.clincher__clip-arrow{display:inline-block;transition:transform .25s var(--ease)}
+.clincher__clip:hover .clincher__clip-arrow{transform:translateX(4px)}
+.clincher__clip-meta{font-size:.82rem;color:var(--stone-500);line-height:1.45}
 @media (max-width:900px){.clincher__grid{grid-template-columns:1fr;gap:30px}}
 
 /* ============ FAQ ============ */
