@@ -21,3 +21,11 @@ DEPLOYMENT.md
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Arbeits-/Backup-Dateien (nie ausliefern, nie ins Repo)
+*.bak
+*.bak-*
+
+# Ungenutzte Quell-/Arbeitsbilder (nicht auf der Live-Site referenziert)
+bilder/Speaker-Slam.png
+bilder/Website - *.jpg
