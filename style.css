@@ -379,6 +379,8 @@ em{font-style:italic}
 .buch__text{margin-top:18px;line-height:1.78;color:var(--ink)}
 .buch__meta{margin-top:36px;font-size:.78rem;letter-spacing:.14em;
   text-transform:uppercase;color:var(--gold-dark);font-weight:600}
+.buch__link{color:var(--gold-dark);font-weight:700;border-bottom:1px solid rgba(158,132,64,.4);transition:color .2s,border-color .2s}
+.buch__link:hover{color:var(--navy);border-color:var(--navy)}
 
 /* ============ ÜBER ============ */
 .ueber__grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
