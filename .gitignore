@@ -8,6 +8,14 @@ api/
 
 # Roh-/Quellbilder: nur die optimierten Bilder in bilder/ werden ausgeliefert.
 Bilder und Auszeichnungen/
+Logo/
+bilder/Expertenkongress.png
+bilder/Buchmesse - *.jpg
+
+# Arbeitspapiere (Entwürfe, Prüfstücke, Konzepte)
+ENTWURF-*
+PRUEFSTUECK-*
+RELAUNCH-*
 
 # Interne Dokumentation (nicht öffentlich ausliefern)
 DEPLOYMENT.md

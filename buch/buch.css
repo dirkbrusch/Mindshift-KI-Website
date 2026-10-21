@@ -107,3 +107,51 @@ body.buchseite-body{background:var(--navy)}
   .buchseite__meta span{display:block;margin-top:2px}
   .buchseite__meta span+span::before{content:none}
 }
+
+/* ================================================================
+   Marketingteil unter Cover und Rückseitentext (21.10.2026)
+   ================================================================ */
+.buchfrage .h2,.buchautor .h2{text-align:left}
+.buchfrage__lead{margin-top:26px;font-size:clamp(1.1rem,1.6vw,1.25rem);line-height:1.7;color:var(--stone-700);max-width:62ch}
+
+.buchzitat{margin:40px 0 0;padding:4px 0 4px 26px;border-left:3px solid var(--gold)}
+.buchzitat p{font-family:var(--ff-display);font-style:italic;font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.5;color:var(--navy)}
+.buchzitat cite,.buchautor__zitat cite,.buchende cite{display:block;margin-top:14px;font-style:normal;font-size:.85rem;font-weight:600;letter-spacing:.06em;color:var(--gold-dark)}
+.buchzitat--karte{margin-top:16px;padding:28px 32px;background:#fff;border:1px solid var(--gold-pale);border-left:4px solid var(--gold);border-radius:var(--radius)}
+
+.buchweg__schritte{list-style:none;padding:0;margin:0 auto;max-width:1080px;display:grid;grid-template-columns:repeat(4,1fr);counter-reset:schritt}
+.buchweg__schritte li{counter-increment:schritt;padding:30px 26px;position:relative}
+.buchweg__schritte li+li{border-left:1px solid var(--stone-100)}
+.buchweg__schritte li::before{content:counter(schritt);display:block;font-family:var(--ff-display);font-size:.95rem;font-weight:700;color:var(--gold);margin-bottom:6px}
+.buchweg__k{display:block;font-family:var(--ff-display);font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+.buchweg__schritte p{color:var(--stone-700);font-size:1rem;line-height:1.6}
+.buchweg__stimme{margin:56px auto 0}
+.buchweg__ueberleitung{font-size:1.05rem;color:var(--stone-700)}
+
+.buchautor__grid{display:grid;grid-template-columns:220px 1fr;gap:48px;align-items:center}
+.buchautor__bild{width:220px;height:220px;object-fit:cover;object-position:50% 30%;border-radius:50%;box-shadow:0 0 0 4px #fff,0 0 0 5px var(--gold-pale),0 18px 40px rgba(10,22,40,.15)}
+.buchautor__zitat p{font-family:var(--ff-display);font-weight:600;font-size:clamp(1.4rem,2.4vw,1.85rem);line-height:1.35;color:var(--navy)}
+.buchautor__text{margin-top:22px;font-size:1.05rem;line-height:1.7;color:var(--stone-700)}
+
+.buchende{text-align:center}
+.buchende__scherer p{font-family:var(--ff-display);font-weight:700;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.3;color:var(--white)}
+.buchende__scherer cite{color:var(--gold-light)}
+.buchende__versprechen{margin:56px auto 0;max-width:62ch}
+.buchende__versprechen p{font-family:var(--ff-display);font-style:italic;font-size:clamp(1.1rem,1.6vw,1.3rem);line-height:1.65;color:var(--stone-100)}
+.buchende__versprechen cite{color:var(--gold-light)}
+.buchende__cta{margin-top:48px;display:flex;flex-direction:column;align-items:center;gap:14px}
+
+@media (max-width:900px){
+  .buchweg__schritte{grid-template-columns:1fr 1fr}
+  .buchweg__schritte li:nth-child(3){border-left:0}
+  .buchweg__schritte li:nth-child(n+3){border-top:1px solid var(--stone-100)}
+}
+@media (max-width:640px){
+  .buchweg__schritte{grid-template-columns:1fr}
+  .buchweg__schritte li{border-left:0!important;padding:24px 4px}
+  .buchweg__schritte li+li{border-top:1px solid var(--stone-100)}
+  .buchautor__grid{grid-template-columns:1fr;gap:28px;justify-items:start}
+  .buchautor__bild{width:150px;height:150px}
+  .buchzitat--karte{padding:22px 20px}
+  .buchende__cta .btn{width:100%}
+}
