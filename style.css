@@ -514,3 +514,127 @@ em{font-style:italic}
   .trust__badges{gap:16px}
   .trust__award{height:76px}
 }
+
+/* ============================================================
+   RELAUNCH 2026-10 · Arbeitsversion (Hero-Buch, Frage, Wende,
+   Keynote-Bogen, Mitnahme, Einsatzfelder, Bühnen neu, Buch)
+   ============================================================ */
+
+/* Hero: Buch-Hinweis */
+.hero__buch{display:inline-flex;align-items:center;gap:14px;margin-top:34px;padding:10px 18px 10px 10px;
+  border:1px solid rgba(193,163,85,.35);border-radius:var(--radius);background:rgba(255,255,255,.04);
+  transition:border-color .25s var(--ease),background .25s var(--ease)}
+.hero__buch:hover{border-color:var(--gold);background:rgba(255,255,255,.08)}
+.hero__buch img{width:44px;height:auto;border-radius:3px;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.hero__buch-text{display:flex;flex-direction:column;line-height:1.3}
+.hero__buch-k{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light)}
+.hero__buch-v{font-size:.92rem;color:rgba(255,255,255,.82)}
+
+/* Die Frage */
+.frage__lead{margin-top:30px;font-size:clamp(1.12rem,1.7vw,1.3rem);line-height:1.7;color:var(--stone-100);max-width:62ch}
+.frage__intro{margin-top:40px;font-size:1rem;color:var(--stone-300)}
+.frage__zitat{margin:14px 0 28px;padding-left:22px;border-left:3px solid var(--gold);
+  font-family:var(--ff-display);font-style:italic;font-size:clamp(1.35rem,2.4vw,1.8rem);line-height:1.45;color:#fff}
+.angst .angst__note{margin-bottom:22px}
+
+/* Die Wende */
+.wende .h2{margin-bottom:26px}
+.wende__lead{margin-bottom:30px}
+.wende__zitat{margin:0 0 40px;padding:28px 32px;background:#fff;border:1px solid var(--gold-pale);border-left:4px solid var(--gold);
+  border-radius:var(--radius-lg);font-family:var(--ff-display);font-style:italic;font-size:clamp(1.2rem,2vw,1.45rem);line-height:1.5;color:var(--navy);box-shadow:var(--shadow-s)}
+.wende__bruecke{font-family:var(--ff-display);font-size:1.25rem;font-weight:600;color:var(--navy);margin-bottom:22px;text-align:center}
+.wende__grid{margin-bottom:0}
+.wende__col .wende__to{font-size:1.22rem;line-height:1.4;margin-bottom:12px}
+.wende__col .wende__from{margin-bottom:0}
+.wende__col--gold{border-color:var(--gold);box-shadow:var(--shadow-gold)}
+
+/* Keynote-Bogen */
+.bogen{display:grid;grid-template-columns:repeat(3,1fr);gap:0;max-width:980px;margin:0 auto 64px;
+  border-top:1px solid var(--stone-100);border-bottom:1px solid var(--stone-100)}
+.bogen__step{padding:30px 28px}
+.bogen__step+.bogen__step{border-left:1px solid var(--stone-100)}
+.bogen__k{display:block;font-family:var(--ff-display);font-size:1.45rem;font-weight:700;color:var(--gold-dark);margin-bottom:10px}
+.bogen__step p{color:var(--stone-700);font-size:1rem;line-height:1.6}
+.angebot__card .angebot__why li{font-size:1.02rem}
+
+/* Was die Menschen mitnehmen */
+.mitnahme__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.mitnahme__card{position:relative;display:flex;flex-direction:column;padding:34px 30px 30px;border:1px solid rgba(193,163,85,.28);
+  border-radius:var(--radius-lg);background:rgba(255,255,255,.035)}
+.mitnahme__num{font-family:var(--ff-display);font-size:2.2rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:16px}
+.mitnahme__card h3{font-family:var(--ff-display);font-size:1.3rem;color:#fff;margin-bottom:8px;line-height:1.25}
+.mitnahme__card>p{color:var(--stone-300);font-size:.98rem;margin-bottom:22px}
+.mitnahme__card blockquote{margin-top:auto;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);
+  font-family:var(--ff-display);font-style:italic;font-size:1.12rem;line-height:1.5;color:var(--gold-light)}
+.mitnahme__card cite{display:block;margin-top:10px;font-family:var(--ff-body);font-style:normal;font-size:.7rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--stone-300)}
+
+/* Einsatzfelder */
+.felder__grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:980px;margin:0 auto}
+.feld{background:#fff;border:1px solid var(--gold-pale);border-radius:var(--radius-lg);padding:36px 34px;box-shadow:var(--shadow-s);
+  border-top:4px solid var(--gold)}
+.feld h3{font-family:var(--ff-display);font-size:1.35rem;color:var(--navy);line-height:1.3;margin-bottom:12px}
+.feld p{color:var(--stone-700);font-size:1.02rem;line-height:1.65}
+
+/* Bühnen: Neueste Auftritte */
+.buehnen__neu{list-style:none;max-width:760px;margin:40px auto 0;display:flex;flex-direction:column;gap:10px}
+.buehnen__neu li{display:flex;gap:18px;align-items:baseline;padding:14px 20px;background:var(--cream);border-radius:var(--radius);
+  color:var(--stone-700);font-size:1rem}
+.buehnen__neu strong{flex:0 0 120px;font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-dark)}
+
+/* Das Buch */
+.buch__grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:64px;align-items:center}
+.buch__cover img{width:100%;max-width:340px;margin:0 auto;border-radius:6px;box-shadow:var(--shadow-l)}
+.buch__lead{font-family:var(--ff-display);font-size:1.25rem;color:var(--navy)}
+.buch__zitat{margin:26px 0 0;padding-left:18px;border-left:3px solid var(--gold);font-family:var(--ff-display);font-style:italic;
+  font-size:1.12rem;color:var(--navy);line-height:1.5}
+.buch__meta{margin-top:26px}
+.buch__actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:20px}
+
+@media (max-width:900px){
+  .bogen{grid-template-columns:1fr}
+  .bogen__step+.bogen__step{border-left:0;border-top:1px solid var(--stone-100)}
+  .mitnahme__grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+  .felder__grid{grid-template-columns:1fr}
+  .buch__grid{grid-template-columns:1fr;gap:36px}
+  .buch__cover img{max-width:240px}
+}
+@media (max-width:600px){
+  .buehnen__neu li{flex-direction:column;gap:4px}
+  .buehnen__neu strong{flex:none}
+  .wende__zitat{padding:22px 22px}
+  .feld{padding:28px 24px}
+}
+.buehnen__siegel{max-width:920px;margin:48px auto 0}
+.buehnen__siegel img{width:100%;height:auto}
+
+/* Bühnen: Oktober 2026 als große Karten über den älteren Auftritten */
+.buehnenrow--neu{grid-template-columns:1fr 1fr;margin-bottom:26px}
+.buehne--gross .buehne__media{aspect-ratio:4/3}
+@media (max-width:900px){.buehnenrow--neu{grid-template-columns:1fr;max-width:460px;margin:0 auto 26px}}
+
+
+/* Relaunch 21.10.: Logo größer (Dirks Befund), Gold-Hervorhebungen in Überschriften aufrecht statt kursiv
+   (Playfair-Kursive mit Zierbuchstaben wie dem „J" passte nicht) */
+.nav__logo{height:68px}
+.nav.scrolled .nav__logo{height:54px}
+.hero__title em,.h2 em{font-style:normal}
+@media (max-width:768px){.nav__logo{height:52px}.nav.scrolled .nav__logo{height:46px}}
+
+/* Anfrage: Plan in drei nummerierten Schritten (StoryBrand) */
+.anfrage__promise--schritte{counter-reset:schritt}
+.anfrage__promise--schritte li{counter-increment:schritt;padding-left:40px}
+.anfrage__promise--schritte li::before{content:counter(schritt);border:0;transform:none;width:26px;height:26px;top:-1px;left:0;
+  border-radius:50%;background:var(--gold);color:var(--navy);font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center}
+
+/* Auf einen Blick auf hellem Grund (neue Reihenfolge 21.10.) */
+.steckbrief--hell .steckbrief__grid{border-color:var(--stone-100);background:#fff}
+.steckbrief--hell .fact{border-bottom-color:var(--stone-100)}
+.steckbrief--hell .fact:nth-child(odd){border-right-color:var(--stone-100)}
+.steckbrief--hell .fact__k{color:var(--gold-dark)}
+.steckbrief--hell .fact__v{color:var(--stone-700)}
+.steckbrief--hell .steckbrief__press{color:var(--stone-500)}
+.steckbrief--hell .steckbrief__press a{color:var(--gold-dark)}
+/* Presse-Beleg im Bühnen-Abschnitt */
+.buehnen__presse{max-width:760px;margin:40px auto 0}
+.buehnen__presse .clincher__clip{background:#fff}
