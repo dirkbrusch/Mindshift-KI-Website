@@ -317,6 +317,9 @@ em{font-style:italic}
 .buehne__name{font-family:var(--ff-display);font-size:1.3rem;color:var(--navy);line-height:1.2;margin-bottom:4px}
 .buehne__sub{color:var(--stone-500);font-size:.98rem;margin-bottom:12px}
 .buehne__tag{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-dark)}
+.buehne{position:relative}
+.buehne__video{display:inline-block;margin-top:12px;font-weight:600;font-size:.95rem;color:var(--gold-dark);text-decoration:underline;text-underline-offset:3px}
+.buehne__video::after{content:"";position:absolute;inset:0}
 .buehnen__discretion{max-width:62ch;margin:46px auto 0;text-align:center;font-size:1.05rem;color:var(--stone-700);line-height:1.65;padding-top:30px;border-top:1px solid var(--gold-pale)}
 .buehnen__discretion strong{color:var(--navy);font-family:var(--ff-display);font-weight:700}
 @media (max-width:900px){.buehnenrow{grid-template-columns:1fr;max-width:460px;margin:0 auto}}

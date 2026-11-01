@@ -90,9 +90,17 @@ body.buchseite-body{background:var(--navy)}
 .buchseite__meta span{white-space:nowrap;display:inline-block}
 
 /* Brücke zur Keynote */
-.buchbruecke{background:var(--cream);padding:70px 0;text-align:center}
-.buchbruecke p{font-family:var(--ff-display);font-size:clamp(1.25rem,2.2vw,1.6rem);color:var(--navy);line-height:1.4}
-.buchbruecke a{margin-top:24px;white-space:normal;max-width:100%;text-align:center}
+.buchbruecke__grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(36px,5vw,72px);align-items:center;max-width:1080px;margin:0 auto}
+.buchbruecke__bild{margin:0}
+.buchbruecke__bild img{width:100%;height:auto;border-radius:var(--radius);box-shadow:0 18px 40px rgba(10,22,40,.15)}
+.buchbruecke__bild figcaption{margin-top:12px;font-size:.85rem;line-height:1.45;color:var(--stone-700)}
+.buchbruecke .h2{text-align:left}
+.buchbruecke__text{margin:20px 0 26px;font-size:1.05rem;line-height:1.7;color:var(--stone-700)}
+.buchbruecke__note{margin-top:14px;font-size:.92rem;line-height:1.5;color:var(--stone-700)}
+.buchbruecke__note a,.buchbruecke__text a,.buchbruecke__bild figcaption a{color:var(--gold-dark);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.buchbruecke__video{display:block;position:relative}
+.buchbruecke__video::after{content:"";position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(10,22,40,.82) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C1A355' d='M9 7l9 5-9 5z'/%3E%3C/svg%3E") center/34px no-repeat;transition:transform .25s var(--ease)}
+.buchbruecke__video:hover::after{transform:scale(1.08)}
 
 @media (max-width:900px){
   .buchseite{padding:120px 0 80px}
@@ -128,10 +136,15 @@ body.buchseite-body{background:var(--navy)}
 .buchweg__stimme{margin:56px auto 0}
 .buchweg__ueberleitung{font-size:1.05rem;color:var(--stone-700)}
 
-.buchautor__grid{display:grid;grid-template-columns:220px 1fr;gap:48px;align-items:center}
-.buchautor__bild{width:220px;height:220px;object-fit:cover;object-position:50% 30%;border-radius:50%;box-shadow:0 0 0 4px #fff,0 0 0 5px var(--gold-pale),0 18px 40px rgba(10,22,40,.15)}
-.buchautor__zitat p{font-family:var(--ff-display);font-weight:600;font-size:clamp(1.4rem,2.4vw,1.85rem);line-height:1.35;color:var(--navy)}
-.buchautor__text{margin-top:22px;font-size:1.05rem;line-height:1.7;color:var(--stone-700)}
+.buchautor__grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(36px,5vw,72px);align-items:start;max-width:1080px;margin:0 auto}
+.buchautor__bild{width:100%;height:auto;border-radius:var(--radius);box-shadow:0 18px 40px rgba(10,22,40,.15)}
+.buchautor .h2{text-align:left}
+.buchautor__text{margin-top:20px}
+.buchautor__text p{font-size:1.05rem;line-height:1.7;color:var(--stone-700);margin-bottom:14px}
+.buchautor__zitat{margin:30px 0 0;padding-left:22px;border-left:3px solid var(--gold)}
+.buchautor__zitat p{font-family:var(--ff-display);font-style:italic;font-size:clamp(1.2rem,1.9vw,1.45rem);line-height:1.45;color:var(--navy)}
+.buchautor__fakt{margin-top:26px;font-size:.95rem;line-height:1.6;color:var(--stone-700)}
+.buchautor__credit{display:block;margin-top:6px;font-size:.8rem;color:var(--stone-500)}
 
 .buchende{text-align:center}
 .buchende__scherer p{font-family:var(--ff-display);font-weight:700;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.3;color:var(--white)}
@@ -142,6 +155,7 @@ body.buchseite-body{background:var(--navy)}
 .buchende__cta{margin-top:48px;display:flex;flex-direction:column;align-items:center;gap:14px}
 
 @media (max-width:900px){
+  .buchautor__grid,.buchbruecke__grid{grid-template-columns:1fr}
   .buchweg__schritte{grid-template-columns:1fr 1fr}
   .buchweg__schritte li:nth-child(3){border-left:0}
   .buchweg__schritte li:nth-child(n+3){border-top:1px solid var(--stone-100)}
@@ -150,8 +164,8 @@ body.buchseite-body{background:var(--navy)}
   .buchweg__schritte{grid-template-columns:1fr}
   .buchweg__schritte li{border-left:0!important;padding:24px 4px}
   .buchweg__schritte li+li{border-top:1px solid var(--stone-100)}
-  .buchautor__grid{grid-template-columns:1fr;gap:28px;justify-items:start}
-  .buchautor__bild{width:150px;height:150px}
+  .buchautor__bild{max-width:240px}
+  .buchbruecke .btn{width:100%}
   .buchzitat--karte{padding:22px 20px}
   .buchende__cta .btn{width:100%}
 }
