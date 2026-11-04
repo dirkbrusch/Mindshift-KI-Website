@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1273 520" width="1273" height="520" role="img" aria-label="Mindshift KI — Mensch führt. KI folgt.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1273 520" width="1273" height="520" role="img" aria-label="Mindshift KI">
 
   <defs>
     <style type="text/css"><![CDATA[
@@ -10,17 +10,11 @@
         font-size: 120px;
         letter-spacing: 0;
       }
-      .claim-text {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        font-weight: 500;
-        font-size: 54px;
-        letter-spacing: 0.5px;
-      }
     ]]></style>
   </defs>
 
-  <title>Mindshift KI — Mensch führt. KI folgt.</title>
-  <desc>Flamme (Mensch/Mindset) führt links, Neuronales Netz (KI) folgt rechts. Light-Variante für helle Hintergründe.</desc>
+  <title>Mindshift KI</title>
+  <desc>Bildzeichen: Flamme (Mensch) links, neuronales Netz (KI) rechts, verbunden durch eine Achse; daneben die Wortmarke Mindshift KI. Light-Variante für helle Hintergründe.</desc>
 
   <g transform="translate(84.5 78.5)">
 
@@ -48,14 +42,9 @@
 
   </g>
 
-  <!-- Wordmark + Claim: alle linksbündig, Block flush mit Symbol-Kanten -->
+  <!-- Wortmarke linksbündig, vertikal mittig zum Bildzeichen -->
   <g class="logo-text">
-    <text x="460.5" y="178" fill="#C1A355">Mindshift</text>
-    <text x="460.5" y="316" fill="#0A1628">KI</text>
-  </g>
-  <g class="claim-text">
-    <text x="460.5" y="415">
-      <tspan fill="#C1A355">Mensch führt.</tspan><tspan fill="#0A1628"> KI folgt.</tspan>
-    </text>
+    <text x="460.5" y="236" fill="#C1A355">Mindshift</text>
+    <text x="460.5" y="374" fill="#0A1628">KI</text>
   </g>
 </svg>
