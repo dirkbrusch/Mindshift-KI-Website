@@ -7,20 +7,24 @@
   <meta name="description" content="Datenschutzerklärung für mindshift-ki.de gemäß DSGVO und TDDDG.">
   <meta name="robots" content="noindex, follow">
   <meta name="theme-color" content="#0A1628">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="style.css?v=2">
-  <link rel="stylesheet" href="legal.css?v=2">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/fonts.css?v=1">
+  <link rel="stylesheet" href="/style.css?v=16">
+  <link rel="stylesheet" href="/legal.css?v=3">
 </head>
-<body>
+<body class="legal-body">
 
-<header class="nav scrolled" id="nav">
-  <a href="index.html" class="nav-logo" aria-label="Mindshift KI — Startseite">
-    <img src="mindshift-ki-logo-light.svg?v=3" alt="Mindshift KI">
-  </a>
-  <a href="index.html#anfrage" class="nav-cta">Keynote anfragen</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="/" aria-label="Mindshift KI – Startseite">
+      <img src="/mindshift-ki-logo-dark.svg?v=3" alt="Mindshift KI" class="nav__logo nav__logo--dark" width="113" height="46">
+    </a>
+    <a class="legalnav__link" href="/">Dirk Brusch &amp; Keynote</a>
+  </div>
 </header>
 
 <main class="legal-page">
@@ -267,46 +271,39 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-inner">
-    <div>
-      <span class="footer-brand">Mindshift KI</span>
-      &nbsp;&middot;&nbsp;
-      <span class="footer-tag">Die KI ist das Werkzeug. Der Mensch bleibt das Original.</span>
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <img src="/mindshift-ki-logo-dark.svg?v=3" alt="Mindshift KI" class="footer__logo" width="137" height="56">
     </div>
-    <div class="footer-links">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-      <button type="button" id="consent-reopen" class="footer-linkbtn">Cookie-Einstellungen</button>
-      <a href="https://www.linkedin.com/in/dirkbrusch" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
+    <p class="footer__claim">Die KI ist das Werkzeug. Der Mensch bleibt das Original.</p>
+    <nav class="footer__links" aria-label="Rechtliches">
+      <a href="/">Startseite</a>
+      <a href="/#keynote">Keynote</a>
+      <a href="/buch/">Buch</a>
+      <a href="/#anfrage">Anfragen</a>
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+      <button type="button" id="consent-reopen" class="footer__linkbtn">Cookie-Einstellungen</button>
+    </nav>
+    <p class="footer__copy">© 2026 Dirk Brusch · Mindshift KI</p>
   </div>
 </footer>
 
-<!-- Consent-Banner -->
-<div id="consent-banner" class="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie-Einstellungen" hidden>
-  <div class="consent-inner">
-    <h3 class="consent-title">Bevor es weitergeht.</h3>
-    <p class="consent-text">
-      Diese Website verwendet nur Cookies und Dienste, die Sie ausdrücklich freigeben.
-      <strong>Essenzielle Funktionen</strong> sind immer aktiv. <strong>Statistik</strong>
-      (Google Analytics) laden wir erst
-      nach Ihrer Einwilligung. Sie können Ihre Auswahl jederzeit über den Link „Cookie-Einstellungen"
-      im Fußbereich widerrufen oder ändern. Details in der
-      <a href="datenschutz.html">Datenschutzerklärung</a>.
-    </p>
-    <div class="consent-options">
-      <label><input type="checkbox" checked disabled> <span>Essenziell (immer aktiv)</span></label>
-      <label><input type="checkbox" id="consent-analytics"> <span>Statistik (Google Analytics)</span></label>
+<div id="consent-banner" class="consent" role="dialog" aria-live="polite" aria-label="Cookie-Einstellungen" hidden>
+  <div class="consent__inner">
+    <div class="consent__body">
+      <h3 class="consent__title">Kurz zu Ihrer Privatsphäre.</h3>
+      <p class="consent__text">Diese Website nutzt nur essenzielle Cookies. <strong>Statistik (Google Analytics)</strong> laden wir erst nach Ihrer Einwilligung — anonymisiert, ohne Werbe-Tracking. Details in der <a href="/datenschutz.html">Datenschutzerklärung</a>.</p>
+      <label class="consent__opt"><input type="checkbox" id="consent-analytics"> <span>Statistik (Google Analytics)</span></label>
     </div>
-    <div class="consent-actions">
-      <button type="button" class="cta-secondary" id="consent-decline">Nur Essenzielles</button>
-      <button type="button" class="cta-secondary" id="consent-save">Auswahl speichern</button>
-      <button type="button" class="cta-primary" id="consent-accept-all">Alle akzeptieren</button>
+    <div class="consent__actions">
+      <button type="button" class="btn btn--ghost btn--sm" id="consent-decline">Nur Essenzielles</button>
+      <button type="button" class="btn btn--ghost btn--sm" id="consent-save">Auswahl speichern</button>
+      <button type="button" class="btn btn--gold btn--sm" id="consent-accept-all">Alle akzeptieren</button>
     </div>
   </div>
 </div>
 
-<script src="consent.js" defer></script>
-<script src="script.js" defer></script>
+<script src="/consent.js?v=1" defer></script>
 </body>
 </html>
