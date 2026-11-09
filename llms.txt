@@ -49,6 +49,7 @@
 
 ## Seiten
 - Startseite: https://mindshift-ki.de/
+- Keynote für Unternehmen, die KI einführen: https://mindshift-ki.de/keynote-ki-einfuehrung/
 - Impressum: https://mindshift-ki.de/impressum.html
 - Datenschutz: https://mindshift-ki.de/datenschutz.html
 
