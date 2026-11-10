@@ -124,6 +124,21 @@ body.legal-body { background: var(--off-white); }
 
 .legal-page a:hover { color: var(--navy); border-bottom-color: var(--gold); }
 
+.legal-box {
+  margin: 44px 0 8px;
+  padding: 24px 26px 10px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  border-radius: 6px;
+}
+
+.legal-box h2,
+.legal-page .legal-box h2:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
 .legal-updated {
   margin-top: 48px;
   padding-top: 24px;

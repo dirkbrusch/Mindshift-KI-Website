@@ -85,7 +85,26 @@
   }
 
   // ---- Consent auf Tools anwenden ----
+  // ---- GA-Cookies entfernen (bei Ablehnung/Widerruf) ----
+  function removeGaCookies() {
+    var host = location.hostname;
+    var parts = host.split('.');
+    var domains = ['', host, '.' + host];
+    if (parts.length > 2) domains.push('.' + parts.slice(-2).join('.'));
+    document.cookie.split(';').forEach(function (c) {
+      var name = c.split('=')[0].trim();
+      if (name === '_ga' || name.indexOf('_ga_') === 0 || name === '_gid' || name === '_gat') {
+        domains.forEach(function (d) {
+          document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + (d ? '; domain=' + d : '');
+        });
+      }
+    });
+  }
+
   function applyConsent(state) {
+    // GA sofort stoppen bzw. wieder erlauben
+    if (GA_MEASUREMENT_ID) window['ga-disable-' + GA_MEASUREMENT_ID] = !state.analytics;
+    if (!state.analytics) removeGaCookies();
     // Consent-Mode-Update
     gtag('consent', 'update', {
       analytics_storage: state.analytics ? 'granted' : 'denied'
