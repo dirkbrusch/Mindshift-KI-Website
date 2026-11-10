@@ -615,6 +615,12 @@ em{font-style:italic}
 .buehnenrow--neu{grid-template-columns:1fr 1fr;margin-bottom:26px}
 .buehne--gross .buehne__media{aspect-ratio:4/3}
 @media (max-width:900px){.buehnenrow--neu{grid-template-columns:1fr;max-width:460px;margin:0 auto 26px}}
+/* 10.11.2026: vierte Karte (Gala Expertenportal) in der unteren Bühnenreihe */
+.buehnenrow--vier{grid-template-columns:repeat(4,1fr);gap:22px}
+.buehnenrow--vier .buehne__body{padding:20px 22px}
+.buehnenrow--vier .buehne__name{font-size:1.18rem}
+@media (max-width:1180px){.buehnenrow--vier{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.buehnenrow--vier{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
 
 
 /* Relaunch 21.10.: Logo größer (Dirks Befund), Gold-Hervorhebungen in Überschriften aufrecht statt kursiv
