@@ -20,7 +20,7 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/fonts.css?v=1">
-<link rel="stylesheet" href="/style.css?v=18">
+<link rel="stylesheet" href="/style.css?v=19">
 <style>
   body.thema-body{background:var(--navy)}
   .thema-body .nav{position:absolute}
@@ -47,6 +47,8 @@
   .thema-nicht p{margin:0;line-height:1.6}
   .thema-belege{list-style:none;padding:0;margin:26px 0 0;display:flex;flex-wrap:wrap;gap:10px 22px;color:var(--gold-light);font-size:.95rem}
   .thema-belege a{color:var(--gold-light)}
+  .thema-foto{margin:6px 0 30px;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-l)}
+  .thema-foto img{width:100%;height:auto}
   .thema-cta p{color:var(--stone-300);font-size:1.1rem;line-height:1.7;margin:0 0 28px}
   @media (max-width:900px){.thema-grid,.thema-nicht{grid-template-columns:1fr}.thema-hero{padding:130px 0 80px}}
   @media (max-width:768px){.themanav__link{padding:8px 12px;font-size:.85rem}}
@@ -122,7 +124,7 @@
       <h1 class="hero__title" id="thema-titel">Ihre KI-Einführung erreicht die Technik. <em>Erreicht sie auch die Menschen?</em></h1>
       <p class="thema-hero__lead">Schulungen erklären die Werkzeuge. Eine Frage beantworten sie nicht, und viele Beschäftigte tragen sie still mit sich: Werde ich noch gebraucht? Meine Keynote spricht sie aus, damit niemand mehr glauben muss, er sei damit allein.</p>
       <div class="thema-hero__cta">
-        <a class="btn btn--gold" href="/#anfrage">Verfügbarkeit anfragen</a>
+        <a class="btn btn--gold" href="/?anlass=ki-einfuehrung#anfrage">Verfügbarkeit anfragen</a>
         <p class="thema-hero__note">Persönliche Rückmeldung – von mir selbst.</p>
       </div>
     </div>
@@ -181,6 +183,7 @@
     <div class="wrap wrap--narrow">
       <p class="kicker kicker--gold">Wer spricht</p>
       <h2 class="h2 h2--light" id="wer-titel">Seit 1988 in der IT. <em>Diesmal trifft der Wandel mich selbst.</em></h2>
+      <figure class="thema-foto"><img src="/bilder/event-expertenkongress.jpg" width="1400" height="933" alt="Dirk Brusch auf der Bühne des Internationalen Expertenkongresses von Hermann Scherer" loading="lazy"></figure>
       <div class="thema-text" style="color:var(--stone-300)">
         <p>Wandel habe ich jahrzehntelang für andere gestaltet, zuerst als Ingenieur, seit 2004 als Unternehmensberater. Dann erledigte die KI in zwanzig Sekunden einen Fragenkatalog, an dem ich einen halben Tag gesessen hatte. Danach gab es Nächte, in denen ich wach lag.</p>
         <p>Ich spreche nicht vom sicheren Ufer. Ich stehe im selben Wasser wie Ihr Publikum.</p>
@@ -217,7 +220,7 @@
       <p class="kicker kicker--gold">Der nächste Schritt</p>
       <h2 class="h2 h2--light" id="cta-titel">Erzählen Sie mir von Ihrer Einführung.</h2>
       <p>Ich melde mich persönlich und unverbindlich. Nicht für einen Pitch. Für ein Gespräch über Ihr Unternehmen und die Menschen, die die Einführung tragen.</p>
-      <a class="btn btn--gold" href="/#anfrage">Verfügbarkeit anfragen</a>
+      <a class="btn btn--gold" href="/?anlass=ki-einfuehrung#anfrage">Verfügbarkeit anfragen</a>
     </div>
   </section>
 </main>
@@ -232,7 +235,7 @@
       <a href="/">Startseite</a>
       <a href="/#keynote">Keynote</a>
       <a href="/buch/">Buch</a>
-      <a href="/#anfrage">Anfragen</a>
+      <a href="/?anlass=ki-einfuehrung#anfrage">Anfragen</a>
       <a href="/impressum.html">Impressum</a>
       <a href="/datenschutz.html">Datenschutz</a>
       <button type="button" id="consent-reopen" class="footer__linkbtn">Cookie-Einstellungen</button>

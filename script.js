@@ -69,6 +69,15 @@
     counters.forEach(function (c) { c.innerHTML = c.getAttribute('data-count') + (c.getAttribute('data-suffix') || ''); });
   }
 
+  /* ---- Anlass aus der Adresse vorbelegen (z. B. /?anlass=ki-einfuehrung#anfrage von der Themenseite) ---- */
+  try {
+    var anlassParam = new URLSearchParams(window.location.search).get('anlass');
+    var anlassSel = document.getElementById('anlass');
+    if (anlassParam && anlassSel && anlassSel.querySelector('option[value="' + anlassParam.replace(/[^a-z0-9-]/gi, '') + '"]')) {
+      anlassSel.value = anlassParam;
+    }
+  } catch (e) {}
+
   /* ---- Keynote-Buttons: gewählte Keynote ins Formular übernehmen ---- */
   var keynoteField = document.getElementById('keynoteField');
   document.querySelectorAll('[data-keynote]').forEach(function (btn) {
