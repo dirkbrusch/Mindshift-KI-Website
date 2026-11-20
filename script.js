@@ -93,7 +93,11 @@
     sio.observe(anfrageSection);
     function updateSticky() {
       var past = window.scrollY > window.innerHeight * 0.7;
-      sticky.classList.toggle('show', past && !anfrageVisible);
+      var show = past && !anfrageVisible;
+      sticky.classList.toggle('show', show);
+      // Nur die sichtbare Leiste ist für Screenreader und Tastatur erreichbar
+      sticky.setAttribute('aria-hidden', show ? 'false' : 'true');
+      sticky.inert = !show;
     }
     window.addEventListener('scroll', updateSticky, { passive: true });
     updateSticky();
